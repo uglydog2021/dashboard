@@ -1,0 +1,80 @@
+/* 修改主题色 */
+.el-button--primary {
+    --el-button-bg-color: #163172;
+    --el-button-border-color: #163172;
+  }
+  
+  /* 修改表格样式 */
+  /* .el-table {
+    --el-table-border-color: #e8e8e8;
+    --el-table-header-bg-color: #fafafa;
+  } */
+
+  :root {
+    --el-menu-active-color: var(--el-color-primary);
+    --el-menu-text-color: var(--el-text-color-primary);
+    --el-menu-hover-text-color: var(--el-color-primary);
+    --el-menu-bg-color: var(--el-fill-color-blank);
+    /* --el-menu-hover-bg-color: var(--el-color-primary-light-9); */
+    --el-menu-item-height: 56px;
+    --el-menu-sub-item-height: calc(var(--el-menu-item-height) - 6px);
+    --el-menu-horizontal-height: 60px;
+    --el-menu-horizontal-sub-item-height: 36px;
+    --el-menu-item-font-size: var(--el-font-size-base);
+    --el-menu-item-hover-fill: var(--el-color-primary-light-9);
+    --el-menu-border-color: var(--el-border-color);
+    --el-menu-base-level-padding: 20px;
+    --el-menu-level-padding: 20px;
+    --el-menu-icon-width: 24px;
+    --el-color-primary: #163172;
+    --el-color-primary-light-3: #1e56a0;
+    --el-color-primary-light-5: #d6e4f0;
+    --el-color-primary-light-7: rgb(197.7, 225.9, 255);
+    --el-color-primary-light-8: rgb(216.8, 235.6, 255);
+    --el-color-primary-light-9: #1e56a0;
+    --el-color-primary-dark-2: rgb(51.2, 126.4, 204);
+    --el-text-color-primary: #163172;
+    --el-text-color-regular: #163172;
+    --el-text-color-secondary: #1e56a0;
+    --el-text-color-placeholder: #a8abb2;
+    --el-input-border-color:#1e56a0;
+    --el-border-color:#1e56a0;
+    --el-border-color-hover: rgb(51.2, 126.4, 204);
+    --el-menu-bg-color: #163172;
+    --el-menu-text-color: #ffffff;
+    --el-menu-active-color: #f6f6f6;
+}
+
+  .el-table {
+    --el-table-border-color: #163172;
+    --el-table-border: 1px solid #163172;
+    --el-table-text-color: #163172;
+    --el-table-header-text-color: #ffffff;
+    --el-table-row-hover-bg-color: #f6f6f6;
+    --el-table-current-row-bg-color: #d6e4f0;
+    --el-table-header-bg-color: #1e56a0;
+    /* --el-table-fixed-box-shadow: var(--el-box-shadow-light); */
+    /* --el-table-bg-color: unset;
+    --el-table-tr-bg-color: unset;
+    --el-table-expanded-cell-bg-color: #ffffff;
+    --el-table-fixed-left-column: inset 10px 0 10px -10px rgba(0, 0, 0, 0.15);
+    --el-table-fixed-right-column: inset -10px 0 10px -10px rgba(0, 0, 0, 0.15);
+    --el-table-index: var(--el-index-normal); */
+    /* background-color: unset;
+    box-sizing: border-box;
+    color: rgb(123, 255, 0);
+    font-size: var(--el-font-size-base); */
+    /* height: fit-content;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative; */
+  }
+
+  .el-menu-item.is-active {
+    background-color:#1e56a0;
+  }
+
+  /* 修改输入框圆角 */
+  .el-input__wrapper {
+    border-radius: 4px !important;
+  }

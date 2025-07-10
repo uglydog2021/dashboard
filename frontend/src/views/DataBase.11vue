@@ -1,0 +1,161 @@
+<template>
+  <div class="query-page">
+    <!-- 查询结果表格 -->
+    <el-row :gutter="20">
+      <el-col>
+        <el-button type="primary" @click="addDataBase">Primary</el-button>
+      </el-col>
+    </el-row>   
+    <el-table :data="tableData" border style="width: 100%" v-loading="loading">
+      <el-table-column
+        v-for="column in tableColumns"
+        :key="column.prop"
+        :prop="column.prop"
+        :label="column.label"
+        :width="column.width"
+      >
+      </el-table-column>
+    </el-table>
+    <br/>
+    <!-- 分页 -->
+    <!-- <el-pagination
+      background
+      layout="total, sizes, prev, pager, next, jumper"
+      :total="total"
+      :page-size="pageSize"
+      :current-page="currentPage"
+      @size-change="handleSizeChange"
+      @current-change="handlePageChange"
+    /> -->
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
+import { storeToRefs } from 'pinia';
+import { useSettingStore } from '@/stores/index';
+import { currentGET } from '@/api';
+import { statusOption } from './ScreenDesign2/component/consts';
+
+// 表格列配置
+const tableColumns = [
+  { prop: 'fileName', label: 'fileName', width: '120' },
+  { prop: 'filePath', label: 'filePath', width: '150' },
+  { prop: 'updateDate', label: 'updateDate' },
+  { prop: 'processMessage', label: 'processMessage', width: '120' },
+  { prop: 'taskUser', label: 'taskUser' },
+  { prop: 'status', label: 'status', width: '120' },
+  { prop: 'OrganizeID', label: 'OrganizeID', width: '120' },
+  { prop: 'releaseMessage', label: 'releaseMessage' },
+  { prop: 'priority', label: 'priority', width: '120' },
+  { prop: 'priority2', label: 'priority2' },
+  { prop: 'createDate', label: 'createDate' },
+];
+
+// 根据状态值获取对应的文本描述
+// const formatStatus = (status: string) => {
+//   const statusItem = statusOption.find((item) => item.value === status);
+//   return statusItem ? statusItem.label : '未知状态';
+// };
+
+// 表单验证规则
+// const validateEndDate = (rule: any, value: string, callback: Function) => {
+//   if (!value) {
+//     callback(new Error('请选择结束日期'));
+//   } else if (queryForm.value.StartData && value <= queryForm.value.StartData) {
+//     callback(new Error('结束日期必须大于开始日期'));
+//   } else {
+//     callback();
+//   }
+// };
+
+const addDataBase = () => {
+  // queryFormRef.value.validate((valid: boolean) => {
+  //   if (valid) {
+  //     currentPage.value = 1; // 重置到第一页
+  //     fetchData();
+  //   } else {
+  //     console.log('表单验证失败');
+  //   }
+  // });
+};
+
+const settingStore = useSettingStore();
+const { dbArray } = storeToRefs(settingStore);
+settingStore.getDatebase();
+
+
+const tableData = ref([]); // 表格数据
+// const pageSize = ref(30); // 每页显示条数
+// const currentPage = ref(1); // 当前页码
+const loading = ref(false); // 加载状态
+// 查询数据
+const fetchData = async () => {
+  loading.value = true;
+  try {
+    // const filteredData = await currentGET('GetFilesManagement', {
+    //   Index: currentPage.value,
+    //   PageSize: pageSize.value,
+    //   ...queryForm.value,
+    // });
+    // tableData.value = filteredData;
+    // console.log("queryForm.conn",queryForm.value.ConnectionName)
+    // selectedConnName.value = queryForm.value.ConnectionName;
+    // total.value = 1000; // 模拟总条数
+  } catch (error) {
+    console.error('数据加载失败', error);
+  } finally {
+    loading.value = false;
+  }
+};
+
+// 初始化加载数据
+// onMounted(() => {
+//   fetchData();
+// });
+
+// 处理查询
+const handleQuery = () => {
+  // queryFormRef.value.validate((valid: boolean) => {
+  //   if (valid) {
+  //     currentPage.value = 1; // 重置到第一页
+  //     fetchData();
+  //   } else {
+  //     console.log('表单验证失败');
+  //   }
+  // });
+};
+
+// 处理重置
+const handleReset = () => {
+  // queryFormRef.value.resetFields(); // 重置表单数据和验证状态
+  // fetchData();
+};
+
+// 处理分页大小变化
+const handleSizeChange = (size: number) => {
+  // pageSize.value = size;
+  fetchData();
+};
+
+// 处理页码变化
+const handlePageChange = (page: number) => {
+  // currentPage.value = page;
+  fetchData();
+};
+</script>
+
+<style scoped>
+.query-page {
+  padding: 20px;
+}
+
+.id-link {
+  color: #409eff;
+  text-decoration: none;
+}
+
+.id-link:hover {
+  text-decoration: underline;
+}
+</style>

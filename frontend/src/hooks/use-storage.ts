@@ -1,0 +1,5 @@
+export const getItem = (key: string) => sessionStorage.getItem(key)
+export const setItem = (key: string, val: string) => sessionStorage.setItem(key, val)
+export const getLocalItem = (key: string) => localStorage.getItem(key)
+export const setLocalItem = (key: string, val: string) => localStorage.setItem(key, val)
+export const removeItem = (key: string) => sessionStorage.removeItem(key)
