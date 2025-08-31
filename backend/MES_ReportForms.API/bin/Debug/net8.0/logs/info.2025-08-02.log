@@ -1,0 +1,26 @@
+2025-08-02 23:10:15,187 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-02 23:10:15,752 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-02 23:10:16,544 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-02 23:10:16,554 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-02 23:10:16,886 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-02 23:10:16,899 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-02 23:10:16,907 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-02 23:10:20,540 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger - - -
+2025-08-02 23:10:21,393 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger - 301 0 - 879.3880ms
+2025-08-02 23:10:21,416 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-02 23:10:21,605 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 178.5592ms
+2025-08-02 23:10:21,641 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui.css - - -
+2025-08-02 23:10:21,651 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui-bundle.js - - -
+2025-08-02 23:10:21,671 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-02 23:10:21,718 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui-standalone-preset.js - - -
+2025-08-02 23:10:21,822 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 151.2227ms
+2025-08-02 23:10:21,888 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-02 23:10:21,913 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-02 23:10:22,056 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui.css - 200 143943 text/css 351.0169ms
+2025-08-02 23:10:22,183 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 439.7351ms
+2025-08-02 23:10:22,219 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-02 23:10:22,251 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-02 23:10:22,374 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 723.5751ms
+2025-08-02 23:10:22,603 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 386.4318ms
+2025-08-02 23:10:22,943 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-02 23:10:24,032 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 1070.4791ms

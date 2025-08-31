@@ -1,0 +1,12 @@
+2025-08-23 23:04:24,020 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 6188 ms
+2025-08-23 23:10:58,883 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2968 ms
+2025-08-23 23:12:23,144 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13782 Response time: 60327 ms
+2025-08-23 23:22:48,025 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13782 Response time: 267834 ms
+2025-08-23 23:24:26,762 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2248 ms
+2025-08-23 23:25:25,779 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13992 Response time: 30414 ms

@@ -1,0 +1,41 @@
+2025-08-18 19:48:11,364 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-18 19:48:11,629 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-18 19:48:11,948 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-18 19:48:11,954 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-18 19:48:12,155 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-18 19:48:12,162 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-18 19:48:12,167 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-18 19:48:14,021 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger - - -
+2025-08-18 19:48:14,414 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger - 301 0 - 413.5109ms
+2025-08-18 19:48:14,440 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-18 19:48:14,552 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 114.0802ms
+2025-08-18 19:48:14,562 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui.css - - -
+2025-08-18 19:48:14,572 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui-bundle.js - - -
+2025-08-18 19:48:14,578 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/swagger-ui-standalone-preset.js - - -
+2025-08-18 19:48:14,627 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-18 19:48:14,627 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-18 19:48:14,677 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui.css - 200 143943 text/css 111.5233ms
+2025-08-18 19:48:14,728 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-18 19:48:14,743 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 171.8718ms
+2025-08-18 19:48:14,758 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-18 19:48:14,775 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 203.0973ms
+2025-08-18 19:48:14,781 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 27.6473ms
+2025-08-18 19:48:14,791 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-18 19:48:14,903 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 112.4138ms
+2025-08-18 19:48:15,065 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-18 19:48:15,394 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 330.0788ms
+2025-08-18 20:01:54,490 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-18 20:01:56,044 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-18 20:01:56,087 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-18 20:01:57,234 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-18 20:01:59,223 INFO  [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (174ms) [Parameters=[@__guid_0='10100593' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[GUID], [t].[BusinessType], [t].[CreateTime], [t].[Data_Permission], [t].[EmployeeId], [t].[Import_Permission], [t].[OrganizationID], [t].[Password], [t].[UpdateTime], [t].[User_Email], [t].[User_Name], [t].[Web_Permission]
+FROM [T_UserMaster] AS [t]
+WHERE [t].[GUID] = @__guid_0
+2025-08-18 20:01:59,663 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-18 20:01:59,686 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API) in 3581.1622ms
+2025-08-18 20:01:59,691 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-18 20:01:59,723 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - 200 - application/json;+charset=utf-8 5232.8691ms
+2025-08-18 20:02:23,624 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getNumberItemsSamePeriodLastYear - - -
+2025-08-18 20:02:23,708 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetNumberItemsSamePeriodLastYear (MES_ReportForms.API)'
+2025-08-18 20:02:23,725 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetNumberItemsSamePeriodLastYear", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetNumberItemsSamePeriodLastYear(System.String) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).

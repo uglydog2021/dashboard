@@ -1,0 +1,30 @@
+2025-08-11 22:26:05,483 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=13555&password=Aa123456 ::1
+Status code: 200, Response Length: 57 Response time: 38703 ms
+2025-08-11 22:26:15,803 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 1057 ms
+2025-08-11 22:26:38,768 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume ::1
+Status code: 200, Response Length: 67 Response time: 2357 ms
+2025-08-11 22:27:41,763 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume ::1
+Status code: 200, Response Length: 67 Response time: 42887 ms
+2025-08-11 22:28:29,276 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume?Type=Week ::1
+Status code: 200, Response Length: 67 Response time: 37751 ms
+2025-08-11 22:29:11,872 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume?Type=Month ::1
+Status code: 200, Response Length: 6428 Response time: 35808 ms
+2025-08-11 22:37:30,740 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume?OrganizationID=20 ::1
+Status code: 500, Response Length: 146 Response time: 492301 ms
+2025-08-11 22:39:01,596 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getMissCountPerformanceVolume?OrganizationID=20 ::1
+Status code: 200, Response Length: 67 Response time: 75099 ms
+2025-08-11 22:40:43,645 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 5527 ms
+2025-08-11 22:40:45,892 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 282 ms
+2025-08-11 22:53:35,177 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 315 Response time: 744087 ms
+2025-08-11 23:07:08,395 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 315 Response time: 803609 ms
+2025-08-11 23:33:15,706 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 315 Response time: 1503739 ms
+2025-08-11 23:39:41,074 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 315 Response time: 3246 ms
+2025-08-11 23:40:00,985 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 315 Response time: 12671 ms

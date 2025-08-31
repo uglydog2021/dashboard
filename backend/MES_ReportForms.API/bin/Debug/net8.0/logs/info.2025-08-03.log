@@ -1,0 +1,18 @@
+2025-08-03 20:00:38,189 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-03 20:00:38,455 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-03 20:00:38,752 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-03 20:00:38,759 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-03 20:00:39,028 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-03 20:00:39,035 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-03 20:00:39,043 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-03 20:00:39,728 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-03 20:00:40,378 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 664.1626ms
+2025-08-03 20:00:40,401 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-03 20:00:40,424 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-03 20:00:40,434 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 33.7071ms
+2025-08-03 20:00:40,565 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 143.1630ms
+2025-08-03 20:00:40,825 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-03 20:00:40,875 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/favicon-32x32.png - - -
+2025-08-03 20:00:40,908 INFO  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-03 20:00:40,917 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/favicon-32x32.png - 200 628 image/png 42.0780ms
+2025-08-03 20:00:41,281 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 450.3244ms

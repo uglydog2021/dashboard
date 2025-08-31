@@ -1,0 +1,404 @@
+2025-08-05 00:00:02,039 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 00:00:02,263 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 00:00:02,520 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 00:00:02,526 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 00:00:02,806 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 00:00:02,814 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 00:00:02,822 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 00:00:06,341 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 00:00:07,177 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 856.1221ms
+2025-08-05 00:00:07,258 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 00:00:07,273 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 00:00:07,296 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 50.3062ms
+2025-08-05 00:00:07,545 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 275.9563ms
+2025-08-05 00:00:07,631 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 00:00:08,416 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 773.9148ms
+2025-08-05 00:27:07,476 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 00:27:07,753 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 00:27:08,048 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 00:27:08,053 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 00:27:08,419 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 00:27:08,433 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 00:27:08,440 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 00:27:08,927 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 00:27:10,056 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 1115.2084ms
+2025-08-05 00:27:10,113 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 00:27:10,121 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 00:27:10,185 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 67.8374ms
+2025-08-05 00:27:10,516 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 423.3363ms
+2025-08-05 00:27:10,668 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 00:27:11,570 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 866.8400ms
+2025-08-05 20:30:22,063 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 20:30:22,362 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 20:30:22,711 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 20:30:22,718 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 20:30:23,006 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 20:30:23,014 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 20:30:23,020 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 20:30:24,885 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 20:30:25,411 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 533.6248ms
+2025-08-05 20:30:25,435 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 20:30:25,445 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 20:30:25,463 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 36.3549ms
+2025-08-05 20:30:25,585 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 141.0370ms
+2025-08-05 20:30:25,635 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 20:30:26,048 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 414.6104ms
+2025-08-05 20:31:09,221 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-05 20:31:11,018 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 20:31:11,068 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-05 20:31:12,392 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-05 20:31:28,744 ERROR [Microsoft.EntityFrameworkCore.Database.Connection] An error occurred using the connection to database 'UAT-Dashboard-IS' on server '.'.
+2025-08-05 20:31:28,839 ERROR [Microsoft.EntityFrameworkCore.Query] An exception occurred while iterating over the results of a query for context type 'MES_ReportForms.Core.ApplicationDbContext'.
+System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-08-05 20:32:36,731 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 20:32:36,909 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 20:32:37,114 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 20:32:37,119 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 20:32:37,307 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 20:32:37,315 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 20:32:37,320 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 20:32:38,191 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 20:32:38,954 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 799.2281ms
+2025-08-05 20:32:38,985 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 20:32:39,005 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 20:32:39,026 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 38.3908ms
+2025-08-05 20:32:39,158 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 171.1672ms
+2025-08-05 20:32:39,227 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 20:32:39,769 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 535.3994ms
+2025-08-05 20:33:00,978 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-05 20:33:01,189 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 20:33:01,237 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-05 20:33:02,068 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-05 20:33:03,311 INFO  [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (141ms) [Parameters=[@__guid_0='10100593' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[GUID], [t].[BusinessType], [t].[CreateTime], [t].[Data_Permission], [t].[EmployeeId], [t].[Import_Permission], [t].[OrganizationID], [t].[Password], [t].[UpdateTime], [t].[User_Email], [t].[User_Name], [t].[Web_Permission]
+FROM [T_UserMaster] AS [t]
+WHERE [t].[GUID] = @__guid_0
+2025-08-05 20:33:03,695 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 20:33:03,721 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API) in 2464.3581ms
+2025-08-05 20:33:03,728 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 20:33:03,766 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - 200 - application/json;+charset=utf-8 2787.2693ms
+2025-08-05 20:33:25,771 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - - -
+2025-08-05 20:33:25,880 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:33:25,896 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyCountByStatus", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 20:33:26,259 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API) in 354.4556ms
+2025-08-05 20:33:26,269 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:33:26,572 ERROR [MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware] 全局异常拦截中间件捕获到未处理的异常: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+System.ObjectDisposedException: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+   at Dapper.SqlMapper.GridReader.OnBeforeGrid() in /_/Dapper/SqlMapper.GridReader.cs:line 185
+   at Dapper.SqlMapper.GridReader.ReadImpl[T](Type type, Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 193
+   at Dapper.SqlMapper.GridReader.Read[T](Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 96
+   at MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.Core\Repositories\Sql\DashboardRepository.cs:line 1284
+   at MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Controllers\DashboardController.cs:line 106
+   at lambda_method79(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Middlewares\GlobalExceptionMiddleware.cs:line 47
+2025-08-05 20:33:26,600 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - 500 - application/json;+charset=utf-8 827.4002ms
+2025-08-05 20:33:58,679 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - - -
+2025-08-05 20:33:58,718 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:33:58,726 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyCountByStatus", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 20:35:49,355 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API) in 110622.6888ms
+2025-08-05 20:35:49,382 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:36:02,205 ERROR [MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware] 全局异常拦截中间件捕获到未处理的异常: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+System.ObjectDisposedException: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+   at Dapper.SqlMapper.GridReader.OnBeforeGrid() in /_/Dapper/SqlMapper.GridReader.cs:line 185
+   at Dapper.SqlMapper.GridReader.ReadImpl[T](Type type, Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 193
+   at Dapper.SqlMapper.GridReader.Read[T](Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 96
+   at MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.Core\Repositories\Sql\DashboardRepository.cs:line 1284
+   at MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Controllers\DashboardController.cs:line 106
+   at lambda_method79(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Middlewares\GlobalExceptionMiddleware.cs:line 47
+2025-08-05 20:36:02,223 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - 500 - application/json;+charset=utf-8 123546.4873ms
+2025-08-05 20:36:08,388 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - - -
+2025-08-05 20:36:08,394 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:36:08,399 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyCountByStatus", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 20:37:07,123 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API) in 58717.3994ms
+2025-08-05 20:37:07,132 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:37:07,259 ERROR [MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware] 全局异常拦截中间件捕获到未处理的异常: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+System.ObjectDisposedException: The reader has been disposed; this can happen after all data has been consumed
+Object name: 'Dapper.SqlMapper+GridReader'.
+   at Dapper.SqlMapper.GridReader.OnBeforeGrid() in /_/Dapper/SqlMapper.GridReader.cs:line 185
+   at Dapper.SqlMapper.GridReader.ReadImpl[T](Type type, Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 193
+   at Dapper.SqlMapper.GridReader.Read[T](Boolean buffered) in /_/Dapper/SqlMapper.GridReader.cs:line 96
+   at MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.Core\Repositories\Sql\DashboardRepository.cs:line 1284
+   at MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus(DashboardQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Controllers\DashboardController.cs:line 106
+   at lambda_method79(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Middlewares\GlobalExceptionMiddleware.cs:line 47
+2025-08-05 20:37:07,275 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - 500 - application/json;+charset=utf-8 58887.0696ms
+2025-08-05 20:38:26,109 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - - -
+2025-08-05 20:38:26,124 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 20:38:26,136 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyCountByStatus", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 21:15:51,760 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 21:15:51,778 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API) in 2245637.0487ms
+2025-08-05 21:15:51,784 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 21:15:51,794 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - 200 - application/json;+charset=utf-8 2245696.5754ms
+2025-08-05 21:15:52,779 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 21:15:52,895 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 75.0736ms
+2025-08-05 21:15:52,905 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 21:15:52,918 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 21:15:52,947 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 39.1898ms
+2025-08-05 21:15:53,031 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 125.0288ms
+2025-08-05 21:15:53,592 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 21:15:54,189 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 591.1012ms
+2025-08-05 21:16:04,238 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - - -
+2025-08-05 21:16:04,244 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 21:16:04,258 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyCountByStatus", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 21:16:42,094 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 21:16:42,107 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API) in 37843.5703ms
+2025-08-05 21:16:42,112 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus (MES_ReportForms.API)'
+2025-08-05 21:16:42,124 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyCountByStatus - 200 - application/json;+charset=utf-8 37894.4111ms
+2025-08-05 21:18:48,765 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - - -
+2025-08-05 21:18:48,778 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:18:48,786 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 21:18:49,241 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 21:18:49,300 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 508.2564ms
+2025-08-05 21:18:49,306 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:18:49,320 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - 200 - application/json;+charset=utf-8 557.8161ms
+2025-08-05 21:18:50,376 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - - -
+2025-08-05 21:18:50,383 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:18:50,390 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 21:18:50,767 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 21:18:50,776 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 379.5333ms
+2025-08-05 21:18:50,785 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:18:50,799 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - 200 - application/json;+charset=utf-8 425.0086ms
+2025-08-05 21:19:05,004 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?OrganizationID=17 - - -
+2025-08-05 21:19:05,011 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:19:05,015 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 21:19:05,183 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 161.1211ms
+2025-08-05 21:19:05,188 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:19:05,333 ERROR [MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware] 全局异常拦截中间件捕获到未处理的异常: マルチパート識別子 "UM.OrganizationID" をバインドできませんでした。
+Microsoft.Data.SqlClient.SqlException (0x80131904): マルチパート識別子 "UM.OrganizationID" をバインドできませんでした。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetProductivity(OrganizationalFormQuery query)
+   at MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm(OrganizationalFormQuery query) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Controllers\DashboardController.cs:line 62
+   at lambda_method97(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in D:\GitHub\olp-dashboard\MES_ReportForms.API\Middlewares\GlobalExceptionMiddleware.cs:line 47
+ClientConnectionId:232e1139-de40-42ee-a5df-dc03dea3ff9d
+Error Number:4104,State:1,Class:16
+2025-08-05 21:19:05,356 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?OrganizationID=17 - 500 - application/json;+charset=utf-8 350.8626ms
+2025-08-05 21:33:37,990 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?OrganizationID=17 - - -
+2025-08-05 21:33:38,000 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 21:33:38,005 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:17:36,947 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 22:17:37,154 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 22:17:37,368 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 22:17:37,373 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 22:17:37,608 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 22:17:37,614 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 22:17:37,620 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 22:17:38,191 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 22:17:39,067 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 897.4045ms
+2025-08-05 22:17:39,111 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 22:17:39,120 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 22:17:39,152 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 55.8817ms
+2025-08-05 22:17:39,253 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 137.8426ms
+2025-08-05 22:17:39,483 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 22:17:40,278 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 752.7105ms
+2025-08-05 22:18:04,218 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-05 22:18:05,920 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 22:18:06,011 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-05 22:18:07,238 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-05 22:18:09,291 INFO  [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (172ms) [Parameters=[@__guid_0='10100593' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[GUID], [t].[BusinessType], [t].[CreateTime], [t].[Data_Permission], [t].[EmployeeId], [t].[Import_Permission], [t].[OrganizationID], [t].[Password], [t].[UpdateTime], [t].[User_Email], [t].[User_Name], [t].[Web_Permission]
+FROM [T_UserMaster] AS [t]
+WHERE [t].[GUID] = @__guid_0
+2025-08-05 22:18:09,703 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:18:09,730 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API) in 3697.8387ms
+2025-08-05 22:18:09,737 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 22:18:09,775 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - 200 - application/json;+charset=utf-8 5557.0773ms
+2025-08-05 22:18:44,529 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?OrganizationID=17 - - -
+2025-08-05 22:18:44,621 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:18:44,641 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:20:47,784 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:20:47,841 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 123194.0035ms
+2025-08-05 22:20:47,846 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:20:47,859 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?OrganizationID=17 - 200 - application/json;+charset=utf-8 123341.0629ms
+2025-08-05 22:21:15,862 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - - -
+2025-08-05 22:21:15,889 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:21:15,899 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:21:19,688 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:21:19,695 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 3789.556ms
+2025-08-05 22:21:19,700 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:21:19,720 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm - 200 - application/json;+charset=utf-8 3873.8336ms
+2025-08-05 22:21:29,144 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?Type=Week - - -
+2025-08-05 22:21:29,153 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:21:29,159 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetOrganizationalForm", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:21:32,911 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:21:32,920 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API) in 3753.4814ms
+2025-08-05 22:21:32,926 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm (MES_ReportForms.API)'
+2025-08-05 22:21:32,945 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getOrganizationalForm?Type=Week - 200 - application/json;+charset=utf-8 3796.8789ms
+2025-08-05 22:48:02,707 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 22:48:02,874 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 22:48:03,090 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 22:48:03,095 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 22:48:03,439 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 22:48:03,448 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 22:48:03,462 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 22:48:03,972 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 22:48:04,782 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 823.2135ms
+2025-08-05 22:48:04,815 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 22:48:04,820 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 22:48:04,840 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 33.2446ms
+2025-08-05 22:48:04,975 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 183.8855ms
+2025-08-05 22:48:05,038 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 22:48:05,575 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 513.9083ms
+2025-08-05 22:49:12,140 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-05 22:49:12,359 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 22:49:12,405 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-05 22:49:13,328 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-05 22:49:14,553 INFO  [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (73ms) [Parameters=[@__guid_0='10100593' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[GUID], [t].[BusinessType], [t].[CreateTime], [t].[Data_Permission], [t].[EmployeeId], [t].[Import_Permission], [t].[OrganizationID], [t].[Password], [t].[UpdateTime], [t].[User_Email], [t].[User_Name], [t].[Web_Permission]
+FROM [T_UserMaster] AS [t]
+WHERE [t].[GUID] = @__guid_0
+2025-08-05 22:49:14,941 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:49:14,988 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API) in 2545.975ms
+2025-08-05 22:49:14,998 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 22:49:15,040 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - 200 - application/json;+charset=utf-8 2902.0223ms
+2025-08-05 22:49:42,680 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDepartmentMonthCurrentYear - - -
+2025-08-05 22:49:42,795 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API)'
+2025-08-05 22:49:42,819 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDepartmentMonthCurrentYear", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDepartmentMonthCurrentYear(MES_ReportForms.Core.Models.DepartmentMonthCurrentYearQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:49:59,663 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:49:59,701 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API) in 16876.2239ms
+2025-08-05 22:49:59,707 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API)'
+2025-08-05 22:49:59,726 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDepartmentMonthCurrentYear - 200 - application/json;+charset=utf-8 17044.2486ms
+2025-08-05 22:51:55,845 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDepartmentMonthCurrentYear - - -
+2025-08-05 22:51:55,902 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API)'
+2025-08-05 22:51:55,908 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDepartmentMonthCurrentYear", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDepartmentMonthCurrentYear(MES_ReportForms.Core.Models.DepartmentMonthCurrentYearQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 22:53:55,681 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 22:53:55,691 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API) in 119775.2616ms
+2025-08-05 22:53:55,696 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear (MES_ReportForms.API)'
+2025-08-05 22:53:55,715 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDepartmentMonthCurrentYear - 200 - application/json;+charset=utf-8 119876.4112ms
+2025-08-05 23:00:43,951 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-05 23:00:44,107 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-05 23:00:44,324 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-05 23:00:44,330 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-05 23:00:44,500 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-05 23:00:44,505 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-05 23:00:44,509 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-05 23:00:45,305 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-05 23:00:45,900 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 638.4544ms
+2025-08-05 23:00:45,911 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-05 23:00:45,936 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-05 23:00:45,950 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 36.2356ms
+2025-08-05 23:00:46,043 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 112.2825ms
+2025-08-05 23:00:46,107 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-05 23:00:46,632 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 529.3579ms
+2025-08-05 23:01:05,385 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - - 0
+2025-08-05 23:01:05,624 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 23:01:05,700 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetToken", controller = "Auth"}. Executing controller action with signature MES_ReportForms.Core.Models.ApiResult`1[System.String] GetToken(System.String, System.String) on controller MES_ReportForms.API.Controllers.AuthController (MES_ReportForms.API).
+2025-08-05 23:01:06,653 WARN  [Microsoft.EntityFrameworkCore.Model.Validation] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-08-05 23:01:08,197 INFO  [Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand (121ms) [Parameters=[@__guid_0='10100593' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [t].[GUID], [t].[BusinessType], [t].[CreateTime], [t].[Data_Permission], [t].[EmployeeId], [t].[Import_Permission], [t].[OrganizationID], [t].[Password], [t].[UpdateTime], [t].[User_Email], [t].[User_Name], [t].[Web_Permission]
+FROM [T_UserMaster] AS [t]
+WHERE [t].[GUID] = @__guid_0
+2025-08-05 23:01:08,616 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 23:01:08,666 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API) in 2931.905ms
+2025-08-05 23:01:08,674 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.API.Controllers.AuthController.GetToken (MES_ReportForms.API)'
+2025-08-05 23:01:08,717 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 POST https://localhost:7014/api/auth/token?guid=10100593&password=Aa123456 - 200 - application/json;+charset=utf-8 3333.1623ms
+2025-08-05 23:01:30,702 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/api/dashboard/getDailyPendingList - - -
+2025-08-05 23:01:30,819 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyPendingList (MES_ReportForms.API)'
+2025-08-05 23:01:30,857 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with {action = "GetDailyPendingList", controller = "Dashboard"}. Executing controller action with signature System.Threading.Tasks.Task`1[MES_ReportForms.Core.Models.ApiResult] GetDailyPendingList(MES_ReportForms.Core.Models.DailyPendingQuery) on controller MES_ReportForms.WebAPI.Controllers.DashboardController (MES_ReportForms.API).
+2025-08-05 23:01:31,023 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor] Executing ObjectResult, writing value of type 'MES_ReportForms.Core.Models.ApiResult`1[[System.Collections.Generic.IEnumerable`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-05 23:01:31,070 INFO  [Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyPendingList (MES_ReportForms.API) in 203.5188ms
+2025-08-05 23:01:31,079 INFO  [Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint 'MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyPendingList (MES_ReportForms.API)'
+2025-08-05 23:01:31,103 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/api/dashboard/getDailyPendingList - 200 - application/json;+charset=utf-8 400.4635ms

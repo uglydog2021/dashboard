@@ -1,0 +1,15 @@
+2025-08-04 22:37:17,409 INFO  [Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager] User profile is available. Using 'C:\Users\devpc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-04 22:37:17,712 WARN  [Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] The WebRootPath was not found: D:\GitHub\olp-dashboard\MES_ReportForms.API\wwwroot. Static files may be unavailable.
+2025-08-04 22:37:18,039 INFO  [Microsoft.Hosting.Lifetime] Now listening on: https://localhost:7014
+2025-08-04 22:37:18,045 INFO  [Microsoft.Hosting.Lifetime] Now listening on: http://localhost:5091
+2025-08-04 22:37:18,388 INFO  [Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+2025-08-04 22:37:18,410 INFO  [Microsoft.Hosting.Lifetime] Hosting environment: Development
+2025-08-04 22:37:18,433 INFO  [Microsoft.Hosting.Lifetime] Content root path: D:\GitHub\olp-dashboard\MES_ReportForms.API
+2025-08-04 22:37:19,672 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/index.html - - -
+2025-08-04 22:37:20,600 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/index.html - 200 - text/html;charset=utf-8 928.2501ms
+2025-08-04 22:37:20,683 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - - -
+2025-08-04 22:37:20,740 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/_vs/browserLink - - -
+2025-08-04 22:37:20,786 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_framework/aspnetcore-browser-refresh.js - 200 13774 application/javascript;+charset=utf-8 141.1697ms
+2025-08-04 22:37:20,954 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 248.3099ms
+2025-08-04 22:37:21,215 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - - -
+2025-08-04 22:37:21,912 INFO  [Microsoft.AspNetCore.Hosting.Diagnostics] Request finished HTTP/2 GET https://localhost:7014/swagger/ReportFormAPI/swagger.json - 200 - application/json;charset=utf-8 668.8393ms

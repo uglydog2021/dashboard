@@ -1,0 +1,16 @@
+2025-08-07 00:03:47,028 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 7961 ms
+2025-08-07 00:04:30,054 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 200, Response Length: 181 Response time: 19772 ms
+2025-08-07 22:01:05,641 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 7797 ms
+2025-08-07 22:01:35,021 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyPendingList ::1
+Status code: 200, Response Length: 772 Response time: 527 ms
+2025-08-07 22:27:32,367 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 3985 ms
+2025-08-07 22:31:33,589 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/attention/GetAttention ::1
+Status code: 500, Response Length: 119 Response time: 166806 ms
+2025-08-07 22:37:10,251 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 3787 ms
+2025-08-07 22:37:43,471 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/attention/GetAttention ::1
+Status code: 200, Response Length: 633 Response time: 2872 ms

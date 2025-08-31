@@ -1,0 +1,16 @@
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\bin\Debug\net8.0\MES_ReportForms.Core.deps.json
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\bin\Debug\net8.0\MES_ReportForms.Core.runtimeconfig.json
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\bin\Debug\net8.0\MES_ReportForms.Core.dll
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\bin\Debug\net8.0\MES_ReportForms.Core.pdb
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\bin\Debug\net8.0\MES_ReportForms.Core.xml
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.csproj.AssemblyReference.cache
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.AssemblyInfoInputs.cache
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.AssemblyInfo.cs
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.csproj.CoreCompileInputs.cache
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.dll
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\refint\MES_ReportForms.Core.dll
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.xml
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.pdb
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\MES_ReportForms.Core.genruntimeconfig.cache
+D:\GitHub\olp-dashboard\MES_ReportForms.Core\obj\Debug\net8.0\ref\MES_ReportForms.Core.dll

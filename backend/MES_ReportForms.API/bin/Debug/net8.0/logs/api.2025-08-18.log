@@ -1,0 +1,2 @@
+2025-08-18 20:01:59,698 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 5179 ms

@@ -1,0 +1,36 @@
+2025-08-05 20:33:03,737 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2742 ms
+2025-08-05 20:33:26,590 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 500, Response Length: 175 Response time: 791 ms
+2025-08-05 20:36:02,216 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 500, Response Length: 175 Response time: 123521 ms
+2025-08-05 20:37:07,267 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 500, Response Length: 175 Response time: 58872 ms
+2025-08-05 21:15:51,789 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 200, Response Length: 181 Response time: 2245674 ms
+2025-08-05 21:16:42,118 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyCountByStatus ::1
+Status code: 200, Response Length: 181 Response time: 37874 ms
+2025-08-05 21:18:49,312 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 976 Response time: 533 ms
+2025-08-05 21:18:50,792 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 976 Response time: 408 ms
+2025-08-05 21:19:05,347 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm?OrganizationID=17 ::1
+Status code: 500, Response Length: 96 Response time: 335 ms
+2025-08-05 22:18:09,750 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 5505 ms
+2025-08-05 22:20:47,853 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm?OrganizationID=17 ::1
+Status code: 200, Response Length: 976 Response time: 123308 ms
+2025-08-05 22:21:19,711 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm ::1
+Status code: 200, Response Length: 976 Response time: 3826 ms
+2025-08-05 22:21:32,934 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getOrganizationalForm?Type=Week ::1
+Status code: 200, Response Length: 10994 Response time: 3781 ms
+2025-08-05 22:49:15,004 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2828 ms
+2025-08-05 22:49:59,716 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDepartmentMonthCurrentYear ::1
+Status code: 200, Response Length: 1598 Response time: 17018 ms
+2025-08-05 22:53:55,702 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDepartmentMonthCurrentYear ::1
+Status code: 200, Response Length: 1598 Response time: 119814 ms
+2025-08-05 23:01:08,688 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 3280 ms
+2025-08-05 23:01:31,093 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getDailyPendingList ::1
+Status code: 200, Response Length: 424 Response time: 364 ms

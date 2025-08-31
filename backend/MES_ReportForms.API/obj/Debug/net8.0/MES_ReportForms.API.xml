@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MES_ReportForms.API</name>
+    </assembly>
+    <members>
+        <member name="T:MES_ReportForms.API.ApiVersionInfo">
+            <summary>
+            api版本号
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.API.ApiVersionInfo.ReportFormAPI">
+            <summary>
+            API
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.ActionHistoryController">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ActionHistoryController.GetActionHistory(MES_ReportForms.Core.Models.System.ActionHistoryFilter)">
+            <summary>
+            根据单据号获取事件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ActionHistoryController.GetActionHistoryList(MES_ReportForms.Core.Models.System.ActionHistoryFilter)">
+            <summary>
+            ActionHistory-分页查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ActionHistoryController.GetActionGroupUserHistory(MES_ReportForms.Core.Models.System.ActionGroupUserHistoryFilter)">
+            <summary>
+            返回件管理-分页查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ActionHistoryController.ExportExcel(MES_ReportForms.Core.Models.System.ActionHistoryExport)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.AttentionController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.AttentionController.GetAttention(MES_ReportForms.Core.Models.AttentionQueryDTO)">
+            <summary>
+            GetAttention
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.AttentionController.AddAttention(MES_ReportForms.Core.Models.AttentionAddDTO)">
+            <summary>
+            AddAttention
+            </summary>
+            <param name="attention"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.AttentionController.RemoveAttention(System.Int32)">
+            <summary>
+            RemoveAttention
+            </summary>
+            <param name="AttentionId"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.AttentionController.UpdateAttention(MES_ReportForms.Core.Models.AttentionUpdateDTO)">
+            <summary>
+            UpdateAttention
+            </summary>
+            <param name="attention"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.DBConnectionController">
+            <summary>
+            数据库备份配置
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.DBConnectionController.Create(MES_ReportForms.Core.Entities.System.T_DBConnectionEntity)">
+            <summary>
+            添加数据库备份配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.DBConnectionController.Get">
+            <summary>
+            获取数据库备份配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.ExecuteController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.FilesManagementController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.FilesManagementController.GetFilesManagement(MES_ReportForms.Core.Models.System.FilesManagementFilter)">
+            <summary>
+            单据主表分页查询
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.FilesManagementController.ExportExcel(MES_ReportForms.Core.Models.System.FilesManagementExport)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.ImportFileController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ImportFileController.ImportEmployeeAttendanceData(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 Sasu出勤表
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ImportFileController.ImportSkillMatrixData(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 SaSu Skill Matrix 表
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.ImportFileController.ImportJapanHolidaysData(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            导入 T_JapanHolidays数据
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.IndirectWorkController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.IndirectWorkController.GetIndirectWork(MES_ReportForms.Core.Models.IndirectWorkQueryDTO)">
+            <summary>
+            GetIndirectWork
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.IndirectWorkController.AddIndirectWork(MES_ReportForms.Core.Models.IndirectWorkAddDTO)">
+            <summary>
+            AddIndirectWork
+            </summary>
+            <param name="indirectWork"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.IndirectWorkController.RemoveIndirectWork(System.Int32)">
+            <summary>
+            RemoveIndirectWork
+            </summary>
+            <param name="IndirectWorkId"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.IndirectWorkController.UpdateIndirectWork(MES_ReportForms.Core.Models.IndirectWorkUpdateDTO)">
+            <summary>
+            UpdateIndirectWork
+            </summary>
+            <param name="indirectWork"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.OrderInfoController">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrderInfoController.GetOrderInfo(MES_ReportForms.Core.Models.System.OrderInfoFilter)">
+            <summary>
+            获取OrderInfo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrderInfoController.ExportExcel(MES_ReportForms.Core.Models.System.OrderInfoExport)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.OrganizationController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrganizationController.GetOrganization(MES_ReportForms.Core.Models.OrganizationQueryDTO)">
+            <summary>
+            GetOrganization
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrganizationController.AddOrganization(MES_ReportForms.Core.Models.OrganizationAddDTO)">
+            <summary>
+            AddOrganization
+            </summary>
+            <param name="organization"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrganizationController.RemoveOrganization(System.Int32)">
+            <summary>
+            RemoveOrganization
+            </summary>
+            <param name="OrganizationId"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.OrganizationController.UpdateOrganization(MES_ReportForms.Core.Models.OrganizationUpdateDTO)">
+            <summary>
+            UpdateOrganization
+            </summary>
+            <param name="organization"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController.#ctor(MES_ReportForms.Core.Repositories.EF.UserMasterRepository)">
+            <summary>
+            
+            </summary>
+            <param name="userRepository"></param>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController.GetUserMaster(MES_ReportForms.Core.Models.UserMasterQueryDTO)">
+            <summary>
+            GetUserMaster
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController.CreateUserMaster(MES_ReportForms.Core.Models.UserMasterAddDTO)">
+            <summary>
+            CreateUserMaster
+            </summary>
+            <param name="user">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController.RemoveUserMaster(System.String)">
+            <summary>
+            RemoveUserMaster
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AdminControllers.UserMasterController.UpdateUserMaster(MES_ReportForms.Core.Models.UserMasterUpdateDTO)">
+            <summary>
+            UpdateUserMaster
+            </summary>
+            <param name="attention"></param>
+            <returns></returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AuthorizeApiControllerBase">
+            <summary>
+            需要验证权限
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.ApiControllerBase">
+            <summary>
+            API 抽象基类 
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.ApiControllerBase.L(System.String,System.Object[])">
+            <summary>
+             
+            </summary>
+            <param name="name"></param>
+            <param name="arguments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.ApiControllerBase.CurrentUserSession">
+            <summary>
+            获取当前登录人信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Controllers.AuthController">
+            <summary>
+            身份授权
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AuthController.GetToken(System.String,System.String)">
+            <summary>
+            获取 Token 
+            </summary>
+            <param name="guid">用户名</param>
+            <param name="password">密码</param>
+            <returns>JWT Token</returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AuthController.RefreshToken(System.String)">
+            <summary>
+            刷新token，以便产生新有效期的token
+            </summary>
+            <param name="token">新Token</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.Controllers.AuthController.GetLoginUser(System.Boolean)">
+            <summary>
+            获取当前登录用户信息
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Extensions.EntityExtensions.SetDefaultValues``1(``0,System.String,Microsoft.EntityFrameworkCore.EntityState)">
+            <summary>
+            设置实体操作默认值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entity"></param>
+            <param name="currentUser"></param>
+            <param name="state"></param>
+        </member>
+        <member name="T:MES_ReportForms.API.Filters.PermissionCheckAttribute">
+            <summary>
+            功能权限验证
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Filters.PermissionCheckAttribute.#ctor(System.String)">
+            <summary>
+            PermissionCheckAttribute
+            </summary>
+            <param name="requiredMenuValue"></param>
+        </member>
+        <member name="M:MES_ReportForms.API.Filters.PermissionCheckAttribute.CleanCache">
+            <summary>
+            清除缓存
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Filters.SwaggerEnumSchemaFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Filters.TransactionFilterAttribute">
+            <summary>
+            为事务过滤器
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Filters.TransactionFilterAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:MES_ReportForms.API.Filters.TransactionFilterAttribute.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:MES_ReportForms.API.JwtHelper">
+            <summary>
+            JWT Helper
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.JwtHelper.GenerateJsonWebToken(MES_ReportForms.Core.Models.UserSession)">
+            <summary>
+            生成JWT令牌。
+            </summary>
+            <param name="session">用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.JwtHelper.CurrentUserSession(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            当前请求用户会话信息
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.JwtHelper.ClaimsToSession(System.Security.Claims.ClaimsPrincipal)">
+            <summary>
+            当前请求用户会话信息
+            </summary>
+            <param name="claimsPrincipal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.JwtHelper.ValidateToken(System.String,System.Boolean)">
+            <summary>
+            检校Token
+            </summary>
+            <param name="token"></param>
+            <param name="isValidateExpireTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.API.JwtHelper.ValidateExpired(System.String,System.Int32)">
+            <summary>
+            验证JWT Token过期时间是否超过阈值
+            </summary>
+            <param name="token"></param>
+            <param name="allowExpiredMaxSeconds"></param>
+        </member>
+        <member name="T:MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware">
+            <summary>
+            全局异常过滤器
+            调用示例：throw new NotImplementedException();
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware},System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+            <param name="alwaysMessageToResponse"></param>
+        </member>
+        <member name="M:MES_ReportForms.API.Middlewares.GlobalExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.API.Middlewares.LoggingMiddleware">
+            <summary>
+            记录API调用日志
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Middlewares.ModifyReponseMiddleware">
+            <summary>
+            修改响应数据内容
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.Resources">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.API.ResourcesExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.API.ResourcesExtensions.ThrowBizException(Microsoft.Extensions.Localization.IStringLocalizer{MES_ReportForms.API.Resources},System.String,System.Object[])">
+            <summary>
+            获取多语言资源，将文本抛出业务异常
+            </summary>
+            <param name="localizer">本地化对象</param>
+            <param name="name">资源名</param>
+            <param name="args">string format的参数，用于格式化资源文本中的{0}等</param>
+            <returns>抛出业务异常</returns>
+            <exception cref="T:MES_ReportForms.Core.Utils.BizException"></exception>
+        </member>
+        <member name="F:MES_ReportForms.API.TokenParameter.Issuer">
+            <summary>
+            颁发者
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.API.TokenParameter.Audience">
+            <summary>
+            接收者
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.API.TokenParameter.Secret">
+            <summary>
+            签名秘钥
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.API.TokenParameter.AccessExpiration">
+            <summary>
+            AccessToken过期时间（分钟）
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.API.TokenParameter.PasswordSalt">
+            <summary>
+            密码Salt
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.WebAPI.Controllers.DashboardController">
+            <summary>
+            获取Dashboard接口信息
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetAttendanceRecord(MES_ReportForms.Core.Models.AttendanceRecordQuery)">
+            <summary>
+            1-出勤数据,休假数据
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetMissCountPerformanceVolume(MES_ReportForms.Core.Models.MissCountQuery)">
+            <summary>
+            2-折线图，显示Miss率,件数
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetOrganizationalForm(MES_ReportForms.Core.Models.OrganizationalFormQuery)">
+            <summary>
+            3-Utilization、Productivity
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetMonthFileCount(System.String)">
+            <summary>
+            4-获取BaseLine件数，本月总件数，BaseLine达成率
+            </summary>
+            <param name="connectionName">可不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyTotalFileCount(MES_ReportForms.Core.Models.DashboardQuery)">
+            <summary>
+            5-当天受领件数
+            </summary>
+            <param name="connectionName">可不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyCountByStatus(MES_ReportForms.Core.Models.DashboardQuery)">
+            <summary>
+            6
+            </summary>
+            <param name="connectionName">可不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyPendingList(MES_ReportForms.Core.Models.DailyPendingQuery)">
+            <summary>
+            7
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetDepartmentMonthCurrentYear(MES_ReportForms.Core.Models.DepartmentMonthCurrentYearQuery)">
+            <summary>
+            8-当前年度每个月每个部门的件数,当前年度每个月每个部门的miss率
+            </summary>
+            <param name="connectionName">可不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetNumberItemsSamePeriodLastYear(System.String)">
+            <summary>
+            9-获取显去年同时期件数,当月各部门出勤率
+            </summary>
+            <param name="connectionName">可不传</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetDailyAttentionList(MES_ReportForms.Core.Models.DailyAttentionQuery)">
+            <summary>
+            10
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.WebAPI.Controllers.DashboardController.GetSkillMatrixByTeam(MES_ReportForms.Core.Models.SkillMatrixQuery)">
+            <summary>
+            11-根据团队类型获取技能矩阵数据
+            </summary>
+            <param name="query">技能矩阵查询参数</param>
+            <returns>技能矩阵数据列表，包含转换后的技能符号</returns>
+        </member>
+    </members>
+</doc>

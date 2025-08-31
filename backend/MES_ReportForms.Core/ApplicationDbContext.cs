@@ -10,6 +10,8 @@ namespace MES_ReportForms.Core
     {
         public required DbSet<T_UserMasterEntity> UserMasterEntity { get; set; }
 
+        public required DbSet<T_IndirectWorkEntity> IndirectWorkEntity { get; set; }
+
         public required DbSet<T_DBConnectionEntity> DBConnectionEntity { get; set; }
 
         public required DbSet<T_FilesManagementEntity> FilesManagementEntity { get; set; }

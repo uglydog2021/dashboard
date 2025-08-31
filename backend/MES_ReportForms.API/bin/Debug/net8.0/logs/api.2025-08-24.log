@@ -1,0 +1,16 @@
+2025-08-24 10:27:54,474 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 5535 ms
+2025-08-24 10:27:56,518 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 134 ms
+2025-08-24 10:44:03,525 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13826 Response time: 927134 ms
+2025-08-24 10:44:37,322 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13826 Response time: 4714 ms
+2025-08-24 10:44:56,800 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13826 Response time: 8326 ms
+2025-08-24 10:45:10,033 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Quotation%20Management ::1
+Status code: 200, Response Length: 8227 Response time: 3061 ms
+2025-08-24 10:45:32,513 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Quotation%20Management ::1
+Status code: 200, Response Length: 8227 Response time: 3644 ms
+2025-08-24 10:45:40,149 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Sales%20Support ::1
+Status code: 200, Response Length: 4490 Response time: 45 ms

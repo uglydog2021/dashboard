@@ -1,0 +1,3845 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "MES_ReportForms Service WebAPI",
+    "description": "",
+    "version": "V1"
+  },
+  "paths": {
+    "/api/actionHistory/GetActionHistory": {
+      "get": {
+        "tags": [
+          "ActionHistory"
+        ],
+        "summary": "根据单据号获取事件",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FileName",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ActionStartDate",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ActionEndDate",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "TaskUser",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/actionHistory/GetActionHistoryList": {
+      "get": {
+        "tags": [
+          "ActionHistory"
+        ],
+        "summary": "ActionHistory-分页查询",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FileName",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ActionStartDate",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ActionEndDate",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "TaskUser",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/actionHistory/GetActionGroupUserHistory": {
+      "get": {
+        "tags": [
+          "ActionHistory"
+        ],
+        "summary": "返回件管理-分页查询",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ActionStartDate",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "ActionEndDate",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/actionHistory/exportExcel": {
+      "post": {
+        "tags": [
+          "ActionHistory"
+        ],
+        "summary": "导出Excel",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionHistoryExport"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionHistoryExport"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActionHistoryExport"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/attention/GetAttention": {
+      "get": {
+        "tags": [
+          "Attention"
+        ],
+        "summary": "GetAttention",
+        "parameters": [
+          {
+            "name": "OrganizationName",
+            "in": "query",
+            "description": "组织的名称，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Start_Time",
+            "in": "query",
+            "description": "注意事项的开始时间，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "End_Time",
+            "in": "query",
+            "description": "注意事项的结束时间，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "User_Id",
+            "in": "query",
+            "description": "发布人（用户），可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_AttentionEntityPageData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/attention/AddAttention": {
+      "post": {
+        "tags": [
+          "Attention"
+        ],
+        "summary": "AddAttention",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionAddDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionAddDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionAddDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/attention/RemoveAttention": {
+      "post": {
+        "tags": [
+          "Attention"
+        ],
+        "summary": "RemoveAttention",
+        "parameters": [
+          {
+            "name": "AttentionId",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/attention/UpdateAttention": {
+      "post": {
+        "tags": [
+          "Attention"
+        ],
+        "summary": "UpdateAttention",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttentionUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/token": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "获取 Token",
+        "parameters": [
+          {
+            "name": "guid",
+            "in": "query",
+            "description": "用户名",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "password",
+            "in": "query",
+            "description": "密码",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/auth/refresh-token": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "刷新token，以便产生新有效期的token",
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "description": "新Token",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getAttendanceRecord": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "1-出勤数据,休假数据",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，必传",
+            "required": true,
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getMissCountPerformanceVolume": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "2-折线图，显示Miss率,件数",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Type",
+            "in": "query",
+            "description": "类型（Day:日[默认]；Week：周；Month：月）",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getOrganizationalForm": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "3-Utilization、Productivity",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "GUID",
+            "in": "query",
+            "description": "GUID",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Type",
+            "in": "query",
+            "description": "类型（Day:日[默认]；Week：周；Month：月）",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getMonthFileCount": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "4-获取BaseLine件数，本月总件数，BaseLine达成率",
+        "parameters": [
+          {
+            "name": "connectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getDailyTotalFileCount": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "5-当天受领件数",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getDailyCountByStatus": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "6",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getDailyPendingList": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "7",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "CreateDate",
+            "in": "query",
+            "description": "可为空，不传则为全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getDepartmentMonthCurrentYear": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "8-当前年度每个月每个部门的件数,当前年度每个月每个部门的miss率",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getNumberItemsSamePeriodLastYear": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "9-获取显去年同时期件数,当月各部门出勤率",
+        "parameters": [
+          {
+            "name": "connectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getDailyAttentionList": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "10",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "可不传",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "实际部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dashboard/getSkillMatrixByTeam": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "11-根据团队类型获取技能矩阵数据",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "数据库连接名称",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "TeamType",
+            "in": "query",
+            "description": "团队类型：Order Processing、Quotation Management、Sales Support",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dbConnection": {
+      "post": {
+        "tags": [
+          "DBConnection"
+        ],
+        "summary": "添加数据库备份配置",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/T_DBConnectionEntity"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/T_DBConnectionEntity"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/T_DBConnectionEntity"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "DBConnection"
+        ],
+        "summary": "获取数据库备份配置",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/execute/QueryTable": {
+      "get": {
+        "tags": [
+          "Execute"
+        ],
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sql",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/execute/ExcuteSql": {
+      "get": {
+        "tags": [
+          "Execute"
+        ],
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Sql",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/execute/QueryTablePost": {
+      "post": {
+        "tags": [
+          "Execute"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/execute/ExcuteSqlPost": {
+      "post": {
+        "tags": [
+          "Execute"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExecuteFilter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/filesManagement/GetFilesManagement": {
+      "get": {
+        "tags": [
+          "FilesManagement"
+        ],
+        "summary": "单据主表分页查询",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "StartData",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "EndData",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "TaskUser",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FileName",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Status",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/filesManagement/exportExcel": {
+      "post": {
+        "tags": [
+          "FilesManagement"
+        ],
+        "summary": "导出Excel",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilesManagementExport"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilesManagementExport"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FilesManagementExport"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/importFile/ImportEmployeeAttendanceData": {
+      "post": {
+        "tags": [
+          "ImportFile"
+        ],
+        "summary": "导入 Sasu出勤表",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_EmployeeAttendanceEntityListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/importFile/ImportSkillMatrixData": {
+      "post": {
+        "tags": [
+          "ImportFile"
+        ],
+        "summary": "导入 SaSu Skill Matrix 表",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_SkillMatrixEntityListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/importFile/ImportJapanHolidaysData": {
+      "post": {
+        "tags": [
+          "ImportFile"
+        ],
+        "summary": "导入 T_JapanHolidays数据",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_JapanHolidaysEntityListApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indirectWork/GetIndirectWork": {
+      "get": {
+        "tags": [
+          "IndirectWork"
+        ],
+        "summary": "GetIndirectWork",
+        "parameters": [
+          {
+            "name": "GUID",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User_Name",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Description",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Start_Time",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "End_Time",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "Non_OCR_Count",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Non_OCR_JJCount",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_IndirectWorkEntityPageData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indirectWork/AddIndirectWork": {
+      "post": {
+        "tags": [
+          "IndirectWork"
+        ],
+        "summary": "AddIndirectWork",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkAddDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkAddDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkAddDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indirectWork/RemoveIndirectWork": {
+      "post": {
+        "tags": [
+          "IndirectWork"
+        ],
+        "summary": "RemoveIndirectWork",
+        "parameters": [
+          {
+            "name": "IndirectWorkId",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/indirectWork/UpdateIndirectWork": {
+      "post": {
+        "tags": [
+          "IndirectWork"
+        ],
+        "summary": "UpdateIndirectWork",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IndirectWorkUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/orderInfo/GetOrderInfo": {
+      "get": {
+        "tags": [
+          "OrderInfo"
+        ],
+        "summary": "获取OrderInfo",
+        "parameters": [
+          {
+            "name": "ConnectionName",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FileName",
+            "in": "query",
+            "description": "可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/orderInfo/exportExcel": {
+      "post": {
+        "tags": [
+          "OrderInfo"
+        ],
+        "summary": "导出Excel",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderInfoExport"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderInfoExport"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderInfoExport"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/organization/GetOrganization": {
+      "get": {
+        "tags": [
+          "Organization"
+        ],
+        "summary": "GetOrganization",
+        "parameters": [
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "部门ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrganizationName",
+            "in": "query",
+            "description": "部门名称，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "MakerTaskCount",
+            "in": "query",
+            "description": "Maker每次获取任务的件数，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "CheckerTaskCount",
+            "in": "query",
+            "description": "Checker每次获取任务的件数，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_OrganizationEntityPageData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organization/AddOrganization": {
+      "post": {
+        "tags": [
+          "Organization"
+        ],
+        "summary": "AddOrganization",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationAddDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationAddDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationAddDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organization/RemoveOrganization": {
+      "post": {
+        "tags": [
+          "Organization"
+        ],
+        "summary": "RemoveOrganization",
+        "parameters": [
+          {
+            "name": "OrganizationId",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/organization/UpdateOrganization": {
+      "post": {
+        "tags": [
+          "Organization"
+        ],
+        "summary": "UpdateOrganization",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrganizationUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/userMaster/GetUserMaster": {
+      "get": {
+        "tags": [
+          "UserMaster"
+        ],
+        "summary": "GetUserMaster",
+        "parameters": [
+          {
+            "name": "GUID",
+            "in": "query",
+            "description": "主键，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "EmployeeId",
+            "in": "query",
+            "description": "员工ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "User_Name",
+            "in": "query",
+            "description": "用户名，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "OrganizationID",
+            "in": "query",
+            "description": "组织ID，可为空，不传则全部",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "BusinessType",
+            "in": "query",
+            "description": "业务类型编码表：\r\n1 = Order processing（订单处理）\r\n2 = Quotation Management（报价管理）\r\n3 = Sales Support（销售支持）",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "description": "每页记录数(默认20)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageNumber",
+            "in": "query",
+            "description": "当前页码(默认1)",
+            "style": "form",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "OrderBy",
+            "in": "query",
+            "description": "排序字段",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order",
+            "in": "query",
+            "description": "排序方式，选项为：ASC、DESC，分别为升序、降序",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/T_UserMasterEntityPageData"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/userMaster/CreateUserMaster": {
+      "post": {
+        "tags": [
+          "UserMaster"
+        ],
+        "summary": "CreateUserMaster",
+        "requestBody": {
+          "description": "用户信息",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterAddDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterAddDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterAddDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/userMaster/RemoveUserMaster": {
+      "post": {
+        "tags": [
+          "UserMaster"
+        ],
+        "summary": "RemoveUserMaster",
+        "parameters": [
+          {
+            "name": "guid",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/userMaster/UpdateUserMaster": {
+      "post": {
+        "tags": [
+          "UserMaster"
+        ],
+        "summary": "UpdateUserMaster",
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserMasterUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BooleanApiResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ActionHistoryExport": {
+        "type": "object",
+        "properties": {
+          "connectionName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "actionStartDate": {
+            "type": "string",
+            "description": "",
+            "format": "date-time",
+            "nullable": true
+          },
+          "actionEndDate": {
+            "type": "string",
+            "description": "",
+            "format": "date-time",
+            "nullable": true
+          },
+          "taskUser": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "AttentionAddDTO": {
+        "type": "object",
+        "properties": {
+          "organizationId": {
+            "type": "integer",
+            "description": "组织的唯一标识符。",
+            "format": "int32",
+            "nullable": true
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "组织的名称。",
+            "nullable": true
+          },
+          "start_Time": {
+            "type": "string",
+            "description": "注意事项的开始时间。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "end_Time": {
+            "type": "string",
+            "description": "注意事项的结束时间。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_Id": {
+            "type": "string",
+            "description": "发布人（用户）的唯一标识符。",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "description": "注意事项的简短标题或主题。",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "注意事项的详细内容。",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AttentionUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "attention_Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "organizationId": {
+            "type": "integer",
+            "description": "组织的唯一标识符。",
+            "format": "int32",
+            "nullable": true
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "组织的名称。",
+            "nullable": true
+          },
+          "start_Time": {
+            "type": "string",
+            "description": "注意事项的开始时间。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "end_Time": {
+            "type": "string",
+            "description": "注意事项的结束时间。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "user_Id": {
+            "type": "string",
+            "description": "发布人（用户）的唯一标识符。",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "description": "注意事项的简短标题或主题。",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "注意事项的详细内容。",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BooleanApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "boolean",
+            "description": "返回的数据"
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "ExecuteFilter": {
+        "type": "object",
+        "properties": {
+          "connectionName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "sql": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FilesManagementExport": {
+        "type": "object",
+        "properties": {
+          "connectionName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "startData": {
+            "type": "string",
+            "description": "",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endData": {
+            "type": "string",
+            "description": "",
+            "format": "date-time",
+            "nullable": true
+          },
+          "taskUser": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "description": "",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IndirectWorkAddDTO": {
+        "required": [
+          "description",
+          "end_Time",
+          "guid",
+          "non_OCR_Count",
+          "non_OCR_JJCount",
+          "ocR_Count",
+          "ocR_JJCount",
+          "spt",
+          "start_Time",
+          "user_Name"
+        ],
+        "type": "object",
+        "properties": {
+          "guid": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "user_Name": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "description": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "start_Time": {
+            "type": "string",
+            "description": "开始时间，不可为空",
+            "format": "date-time"
+          },
+          "end_Time": {
+            "type": "string",
+            "description": "结束时间，不可为空",
+            "format": "date-time"
+          },
+          "non_OCR_Count": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "spt": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "non_OCR_JJCount": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "ocR_Count": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "ocR_JJCount": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IndirectWorkUpdateDTO": {
+        "required": [
+          "description",
+          "end_Time",
+          "guid",
+          "id",
+          "non_OCR_Count",
+          "non_OCR_JJCount",
+          "ocrCount",
+          "ocrjjCount",
+          "spt",
+          "start_Time",
+          "user_Name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "修改数据的ID，不可为空",
+            "format": "int32"
+          },
+          "guid": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "user_Name": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "description": {
+            "minLength": 1,
+            "type": "string",
+            "description": "不可为空"
+          },
+          "start_Time": {
+            "type": "string",
+            "description": "开始时间，不可为空",
+            "format": "date-time"
+          },
+          "end_Time": {
+            "type": "string",
+            "description": "结束时间，不可为空",
+            "format": "date-time"
+          },
+          "non_OCR_Count": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "spt": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "non_OCR_JJCount": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "ocrCount": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          },
+          "ocrjjCount": {
+            "type": "integer",
+            "description": "不可为空",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrderInfoExport": {
+        "type": "object",
+        "properties": {
+          "connectionName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "fileName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrganizationAddDTO": {
+        "type": "object",
+        "properties": {
+          "organizationID": {
+            "type": "integer",
+            "description": "部门ID。固定长度2个字符，为主键。",
+            "format": "int32"
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "部门名称。最大长度为200个字符，不能为空。",
+            "nullable": true
+          },
+          "makerTaskCount": {
+            "type": "integer",
+            "description": "Maker每次获取任务的件数，不能为空。",
+            "format": "int32",
+            "nullable": true
+          },
+          "checkerTaskCount": {
+            "type": "integer",
+            "description": "Checker每次获取任务的件数，不能为空。",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrganizationUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "organizationID": {
+            "type": "integer",
+            "description": "部门ID。固定长度2个字符，为主键。",
+            "format": "int32"
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "部门名称。最大长度为200个字符，不能为空。",
+            "nullable": true
+          },
+          "makerTaskCount": {
+            "type": "integer",
+            "description": "Maker每次获取任务的件数，不能为空。",
+            "format": "int32",
+            "nullable": true
+          },
+          "checkerTaskCount": {
+            "type": "integer",
+            "description": "Checker每次获取任务的件数，不能为空。",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StringApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "string",
+            "description": "返回的数据",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "StringListApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "返回的数据",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "T_AttentionEntity": {
+        "type": "object",
+        "properties": {
+          "attention_Id": {
+            "type": "integer",
+            "description": "注意事项的唯一标识符。该字段为主键且自动增长。",
+            "format": "int32"
+          },
+          "organizationId": {
+            "type": "integer",
+            "description": "组织的唯一标识符。",
+            "format": "int32",
+            "nullable": true
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "组织的名称。",
+            "nullable": true
+          },
+          "start_Time": {
+            "type": "string",
+            "description": "注意事项的开始时间。",
+            "format": "date-time"
+          },
+          "end_Time": {
+            "type": "string",
+            "description": "注意事项的结束时间。",
+            "format": "date-time"
+          },
+          "user_Id": {
+            "type": "string",
+            "description": "发布人（用户）的唯一标识符。",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "description": "注意事项的简短标题或主题。",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "description": "注意事项的详细内容。",
+            "nullable": true
+          },
+          "createTime": {
+            "type": "string",
+            "description": "记录创建的时间。",
+            "format": "date-time"
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "记录最后更新时间。",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_AttentionEntityPageData": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_AttentionEntity"
+            },
+            "description": "数据列表",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "description": "总记录数",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "分页查询响应"
+      },
+      "T_DBConnectionEntity": {
+        "type": "object",
+        "properties": {
+          "dbName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "account": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          },
+          "passWord": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_EmployeeAttendanceEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "自增长主键",
+            "format": "int32"
+          },
+          "guid": {
+            "type": "string",
+            "description": "GUID",
+            "nullable": true
+          },
+          "employeeId": {
+            "type": "string",
+            "description": "Employee ID",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "description": "姓名",
+            "nullable": true
+          },
+          "leaveType": {
+            "type": "integer",
+            "description": "休假类型（1.AnnualLeave年假 2. SickLeave 病假 3.OtherSpecialLeave 其他 4.OvertimeShift 串休）",
+            "format": "int32"
+          },
+          "attendanceYear": {
+            "type": "integer",
+            "description": "考勤年份",
+            "format": "int32"
+          },
+          "attendanceMonth": {
+            "type": "integer",
+            "description": "考勤月份（用数字 1 - 12 表示）",
+            "format": "int32"
+          },
+          "attendanceDay": {
+            "type": "integer",
+            "description": "考勤日期",
+            "format": "int32"
+          },
+          "leaveDays": {
+            "type": "number",
+            "description": "休假时长（串休以外的假期单位为天，表示为1或者0.5，0.5代表半天，其他数是串休）",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_EmployeeAttendanceEntityListApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_EmployeeAttendanceEntity"
+            },
+            "description": "返回的数据",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "T_IndirectWorkEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "guid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "start_Time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_Time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "non_OCR_Count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "spt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "non_OCR_JJCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ocR_Count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ocR_JJCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "creatorGUID": {
+            "type": "string",
+            "nullable": true
+          },
+          "creator": {
+            "type": "string",
+            "nullable": true
+          },
+          "create_Time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "update_Time": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "duration": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_IndirectWorkEntityPageData": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_IndirectWorkEntity"
+            },
+            "description": "数据列表",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "description": "总记录数",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "分页查询响应"
+      },
+      "T_JapanHolidaysEntity": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "holidayDate": {
+            "type": "string",
+            "description": "",
+            "format": "date-time"
+          },
+          "holidayName": {
+            "type": "string",
+            "description": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_JapanHolidaysEntityListApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_JapanHolidaysEntity"
+            },
+            "description": "返回的数据",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "T_OrganizationEntity": {
+        "type": "object",
+        "properties": {
+          "organizationID": {
+            "type": "integer",
+            "description": "部门ID",
+            "format": "int32"
+          },
+          "organizationName": {
+            "type": "string",
+            "description": "部门名称。最大长度为200个字符，不能为空。",
+            "nullable": true
+          },
+          "makerTaskCount": {
+            "type": "integer",
+            "description": "Maker每次获取任务的件数，不能为空。",
+            "format": "int32"
+          },
+          "checkerTaskCount": {
+            "type": "integer",
+            "description": "Checker每次获取任务的件数，不能为空。",
+            "format": "int32"
+          },
+          "createTime": {
+            "type": "string",
+            "description": "组织的创建时间。默认值为当前时间（GETDATE()）。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "组织的更新时间。此字段为可空类型。",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": ""
+      },
+      "T_OrganizationEntityPageData": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_OrganizationEntity"
+            },
+            "description": "数据列表",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "description": "总记录数",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "分页查询响应"
+      },
+      "T_SkillMatrixEntity": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "description": "用户的全局唯一标识符，设置为主键",
+            "nullable": true
+          },
+          "team": {
+            "type": "string",
+            "description": "团队",
+            "nullable": true
+          },
+          "group1": {
+            "type": "string",
+            "description": "分组 1",
+            "nullable": true
+          },
+          "group2": {
+            "type": "string",
+            "description": "分组 2",
+            "nullable": true
+          },
+          "tokyoSkill": {
+            "type": "string",
+            "description": "订单处理技能 - 东京",
+            "nullable": true
+          },
+          "osakaSkill": {
+            "type": "string",
+            "description": "订单处理技能 - 大阪",
+            "nullable": true
+          },
+          "wave10Skill": {
+            "type": "string",
+            "description": "订单处理技能 - Wave10",
+            "nullable": true
+          },
+          "inputASkill": {
+            "type": "string",
+            "description": "订单处理技能 - 入力 A",
+            "nullable": true
+          },
+          "inputBSkill": {
+            "type": "string",
+            "description": "订单处理技能 - 入力 B",
+            "nullable": true
+          },
+          "newSCSkill": {
+            "type": "string",
+            "description": "订单处理技能 - 新 SC",
+            "nullable": true
+          },
+          "efaxSkill": {
+            "type": "string",
+            "description": "订单处理技能 - E - FAX 送信",
+            "nullable": true
+          },
+          "productQuoteSkill": {
+            "type": "string",
+            "description": "报价管理技能 - 物販見積作成",
+            "nullable": true
+          },
+          "gpoSecondQuoteSkill": {
+            "type": "string",
+            "description": "报价管理技能 - GPO 二次見積",
+            "nullable": true
+          },
+          "contractQuoteSkill": {
+            "type": "string",
+            "description": "报价管理技能 - 契約見積作成",
+            "nullable": true
+          },
+          "masterRegistrationSkill": {
+            "type": "string",
+            "description": "报价管理技能 - マスター登録申請",
+            "nullable": true
+          },
+          "certificateSkill": {
+            "type": "string",
+            "description": "报价管理技能 - 証明書 MSA 入金業務",
+            "nullable": true
+          },
+          "msaPaymentSkill": {
+            "type": "string",
+            "description": "报价管理技能 - MSA 入金業務",
+            "nullable": true
+          },
+          "postDiscountSkill": {
+            "type": "string",
+            "description": "报价管理技能 - 後値引き",
+            "nullable": true
+          },
+          "sampleArrangementSkill": {
+            "type": "string",
+            "description": "销售支持技能 - サンプル手配",
+            "nullable": true
+          },
+          "shortTermLoanSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 短期貸出（直販＆間販）",
+            "nullable": true
+          },
+          "inventoryPromotionSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 在庫関連＆販促品",
+            "nullable": true
+          },
+          "loanerEquipmentSkill": {
+            "type": "string",
+            "description": "销售支持技能 - ローナー備品",
+            "nullable": true
+          },
+          "equipmentArrangementSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 備品手配関連(ローナー以外)",
+            "nullable": true
+          },
+          "indirectSalesCaseSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 間販案件",
+            "nullable": true
+          },
+          "newSCCaseSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 新 SC 案件",
+            "nullable": true
+          },
+          "directSalesCaseSkill": {
+            "type": "string",
+            "description": "销售支持技能 - 直販案件",
+            "nullable": true
+          },
+          "japaneseCertificate": {
+            "type": "string",
+            "description": "语言技能 - 日语证书",
+            "nullable": true
+          },
+          "japaneseAbility": {
+            "type": "string",
+            "description": "语言技能 - 日语实际能力",
+            "nullable": true
+          },
+          "studyAbroadExperience": {
+            "type": "string",
+            "description": "语言技能 - 留学经验",
+            "nullable": true
+          },
+          "englishLevel": {
+            "type": "string",
+            "description": "语言技能 - 英语等级",
+            "nullable": true
+          },
+          "callHandlingExperience": {
+            "type": "string",
+            "description": "语言技能 - Call 对应经验",
+            "nullable": true
+          },
+          "ktExperience": {
+            "type": "string",
+            "description": "其他技能 - KT 经验",
+            "nullable": true
+          },
+          "domainExperience1": {
+            "type": "string",
+            "description": "其他技能 - Domain 经验①(2 年以上)",
+            "nullable": true
+          },
+          "domainExperience2": {
+            "type": "string",
+            "description": "其他技能 - Domain 经验②(2 年以上)",
+            "nullable": true
+          },
+          "excelSkill": {
+            "type": "string",
+            "description": "其他技能 - Excel 技能",
+            "nullable": true
+          },
+          "otherQualifications": {
+            "type": "string",
+            "description": "其他技能 - その他資格",
+            "nullable": true
+          },
+          "otherSkills": {
+            "type": "string",
+            "description": "其他技能 - その他スキル",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "T_SkillMatrixEntityListApiResult": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "total": {
+            "type": "integer",
+            "description": "",
+            "format": "int32"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_SkillMatrixEntity"
+            },
+            "description": "返回的数据",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "API响应体"
+      },
+      "T_UserMasterEntity": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "description": "主键。",
+            "nullable": true
+          },
+          "employeeId": {
+            "type": "string",
+            "description": "员工ID。最大长度为100个字符。",
+            "nullable": true
+          },
+          "user_Name": {
+            "type": "string",
+            "description": "用户名。此字段为必填项。",
+            "nullable": true
+          },
+          "organizationID": {
+            "type": "integer",
+            "description": "组织ID。此字段长度为2个字符。",
+            "format": "int32",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "description": "用户的密码。此字段为必填项，最大长度为255个字符。",
+            "nullable": true
+          },
+          "user_Email": {
+            "type": "string",
+            "description": "用户的电子邮件地址。最大长度为255个字符。",
+            "nullable": true
+          },
+          "web_Permission": {
+            "type": "integer",
+            "description": "用户的Web权限。",
+            "format": "int32",
+            "nullable": true
+          },
+          "data_Permission": {
+            "type": "integer",
+            "description": "用户的数据权限。",
+            "format": "int32",
+            "nullable": true
+          },
+          "import_Permission": {
+            "type": "integer",
+            "description": "用户的导入权限。默认值为0。",
+            "format": "int32",
+            "nullable": true
+          },
+          "businessType": {
+            "type": "integer",
+            "description": "业务类型编码表：\r\n1 = Order processing（订单处理）\r\n2 = Quotation Management（报价管理）\r\n3 = Sales Support（销售支持）",
+            "format": "int32",
+            "nullable": true
+          },
+          "businessTypeText": {
+            "type": "string",
+            "description": "",
+            "nullable": true,
+            "readOnly": true
+          },
+          "createTime": {
+            "type": "string",
+            "description": "用户记录的创建时间。\r\n默认值为当前时间（GETDATE()）。该字段为可空类型。",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updateTime": {
+            "type": "string",
+            "description": "用户记录的最后更新时间。\r\n该字段为可空类型。",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "T_UserMasterEntityPageData": {
+        "required": [
+          "code",
+          "success"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "integer",
+            "description": "响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)",
+            "format": "int32"
+          },
+          "message": {
+            "type": "string",
+            "description": "响应消息",
+            "nullable": true
+          },
+          "success": {
+            "type": "boolean",
+            "description": "是否成功"
+          },
+          "result": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/T_UserMasterEntity"
+            },
+            "description": "数据列表",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "description": "总记录数",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "分页查询响应"
+      },
+      "UserMasterAddDTO": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "description": "主键。",
+            "nullable": true
+          },
+          "employeeId": {
+            "type": "string",
+            "description": "获取或设置员工ID",
+            "nullable": true
+          },
+          "user_Name": {
+            "type": "string",
+            "description": "用户名",
+            "nullable": true
+          },
+          "organizationID": {
+            "type": "integer",
+            "description": "组织ID",
+            "format": "int32",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "description": "用户的密码",
+            "nullable": true
+          },
+          "user_Email": {
+            "type": "string",
+            "description": "用户的电子邮件地址",
+            "nullable": true
+          },
+          "web_Permission": {
+            "type": "integer",
+            "description": "用户的Web权限，必填",
+            "format": "int32"
+          },
+          "data_Permission": {
+            "type": "integer",
+            "description": "用户的数据权限，必填",
+            "format": "int32"
+          },
+          "import_Permission": {
+            "type": "integer",
+            "description": "用户的导入权限。默认值为0。",
+            "format": "int32"
+          },
+          "businessType": {
+            "type": "integer",
+            "description": "业务类型编码表：\r\n1 = Order processing（订单处理）\r\n2 = Quotation Management（报价管理）\r\n3 = Sales Support（销售支持）",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserMasterUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "description": "主键。",
+            "nullable": true
+          },
+          "employeeId": {
+            "type": "string",
+            "description": "获取或设置员工ID",
+            "nullable": true
+          },
+          "user_Name": {
+            "type": "string",
+            "description": "用户名。此字段为必填项。",
+            "nullable": true
+          },
+          "organizationID": {
+            "type": "integer",
+            "description": "组织ID",
+            "format": "int32",
+            "nullable": true
+          },
+          "user_Email": {
+            "type": "string",
+            "description": "用户的电子邮件地址",
+            "nullable": true
+          },
+          "web_Permission": {
+            "type": "integer",
+            "description": "用户的Web权限。",
+            "format": "int32"
+          },
+          "data_Permission": {
+            "type": "integer",
+            "description": "用户的数据权限。",
+            "format": "int32"
+          },
+          "import_Permission": {
+            "type": "integer",
+            "description": "用户的导入权限。默认值为0。",
+            "format": "int32"
+          },
+          "businessType": {
+            "type": "integer",
+            "description": "业务类型编码表：\r\n1 = Order processing（订单处理）\r\n2 = Quotation Management（报价管理）\r\n3 = Sales Support（销售支持）",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "请输入token,格式为 Bearer xxxxxxxx（注意中间必须有空格）",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "Dashboard",
+      "description": "获取Dashboard接口信息"
+    },
+    {
+      "name": "Auth",
+      "description": "身份授权"
+    },
+    {
+      "name": "ActionHistory",
+      "description": ""
+    },
+    {
+      "name": "Attention",
+      "description": ""
+    },
+    {
+      "name": "DBConnection",
+      "description": "数据库备份配置"
+    },
+    {
+      "name": "Execute",
+      "description": ""
+    },
+    {
+      "name": "FilesManagement",
+      "description": ""
+    },
+    {
+      "name": "ImportFile",
+      "description": ""
+    },
+    {
+      "name": "IndirectWork",
+      "description": ""
+    },
+    {
+      "name": "OrderInfo",
+      "description": ""
+    },
+    {
+      "name": "Organization",
+      "description": ""
+    },
+    {
+      "name": "UserMaster",
+      "description": ""
+    }
+  ]
+}

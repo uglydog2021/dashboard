@@ -1,0 +1,36 @@
+2025-08-25 10:50:23,388 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 4171 ms
+2025-08-25 10:57:09,579 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 360926 ms
+2025-08-25 11:02:38,083 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 749 ms
+2025-08-25 11:04:28,743 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 443 ms
+2025-08-25 11:05:51,041 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 452 ms
+2025-08-25 11:06:38,827 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 381 ms
+2025-08-25 11:09:48,006 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 1825 ms
+2025-08-25 11:10:35,872 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 1375 ms
+2025-08-25 11:12:23,936 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 1779 ms
+2025-08-25 11:17:24,830 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 265865 ms
+2025-08-25 11:25:58,309 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2138 ms
+2025-08-25 11:26:42,094 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportEmployeeAttendanceData ::1
+Status code: 200, Response Length: 8664 Response time: 4689 ms
+2025-08-25 13:07:02,317 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 2685 ms
+2025-08-25 13:10:50,686 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportSkillMatrixData ::1
+Status code: 200, Response Length: 47270 Response time: 187478 ms
+2025-08-25 13:17:08,840 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 1933 ms
+2025-08-25 13:17:46,301 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/importFile/ImportSkillMatrixData ::1
+Status code: 200, Response Length: 46622 Response time: 809 ms
+2025-08-25 13:30:27,459 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] POST /api/auth/token?guid=10100593&password=Aa123456 ::1
+Status code: 200, Response Length: 543 Response time: 1852 ms
+2025-08-25 13:30:56,416 INFO  [MES_ReportForms.API.Middlewares.LoggingMiddleware] GET /api/dashboard/getSkillMatrixByTeam?TeamType=Order%20Processing ::1
+Status code: 200, Response Length: 13826 Response time: 276 ms

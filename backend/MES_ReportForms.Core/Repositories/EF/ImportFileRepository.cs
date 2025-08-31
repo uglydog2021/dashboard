@@ -52,8 +52,8 @@ namespace MES_ReportForms.Core.Repositories.EF
                 ////如果找不到此人信息，也跳过
                 if (userMaster == null) continue;  // 如果姓名为空，则跳过
 
-                // 判断每一列（从 C 列到 AG 列，代表 1 号到 31 号）
-                for (int col = 4; col <= 33; col++) // C 列到 AG 列
+                // 判断每一列（从 D 列到 AH 列，代表 1 号到 31 号）
+                for (int col = 4; col <= 34; col++) // D 列到 AH 列
                 {
                     var attendanceData = worksheet.Cells[row, col].Text.Trim();
                     if (string.IsNullOrEmpty(attendanceData)) continue;  // 如果当天没有数据，则跳过
@@ -71,7 +71,7 @@ namespace MES_ReportForms.Core.Repositories.EF
                         LeaveType = leaveType,
                         AttendanceYear = DateTime.Now.Year,
                         AttendanceMonth = currentMonth,
-                        AttendanceDay = col - 2, // 列数从 C 列开始，1 号是 C 列
+                        AttendanceDay = col - 3, // 列数从 D 列开始，1 号是 D 列
                         LeaveDays = leaveDays
                     };
 

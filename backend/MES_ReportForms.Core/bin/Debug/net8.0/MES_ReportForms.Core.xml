@@ -1,0 +1,1847 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MES_ReportForms.Core</name>
+    </assembly>
+    <members>
+        <member name="T:MES_ReportForms.Core.DependencyInjection">
+            <summary>
+            注入Core中的依赖。主程序引用Core，需要调整此方法，否则ApplicationDbContext和Repositories可能无法使用。
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.BaseEntity">
+            <summary>
+            数据库表公共字段
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.BaseEntity.IsDelete">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.BaseEntity.CreateUser">
+            <summary>
+            创建用户ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.BaseEntity.CreateDate">
+            <summary>
+            创建日期
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.BaseEntity.ModifierUser">
+            <summary>
+            修改用户ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.BaseEntity.ModifierDate">
+            <summary>
+            修改日期
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.TaskUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.HistoryFilePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.ActionStartDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.ActionEndDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.CreateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.WorkTimeH">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.WorkTimeM">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_ActionHistoryEntity.WorkTimeS">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_AttentionEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.Attention_Id">
+            <summary>
+            注意事项的唯一标识符。该字段为主键且自动增长。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.OrganizationId">
+            <summary>
+            组织的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.OrganizationName">
+            <summary>
+            组织的名称。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.Start_Time">
+            <summary>
+            注意事项的开始时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.End_Time">
+            <summary>
+            注意事项的结束时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.User_Id">
+            <summary>
+            发布人（用户）的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.Subject">
+            <summary>
+            注意事项的简短标题或主题。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.Message">
+            <summary>
+            注意事项的详细内容。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.CreateTime">
+            <summary>
+            记录创建的时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_AttentionEntity.UpdateTime">
+            <summary>
+            记录最后更新时间。
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_DBConnectionEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_DBConnectionEntity.DBName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_DBConnectionEntity.Account">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_DBConnectionEntity.PassWord">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.Id">
+            <summary>
+            自增长主键
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.EmployeeId">
+            <summary>
+            Employee ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.UserName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.LeaveType">
+            <summary>
+            休假类型（1.AnnualLeave年假 2. SickLeave 病假 3.OtherSpecialLeave 其他 4.OvertimeShift 串休）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.AttendanceYear">
+            <summary>
+            考勤年份
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.AttendanceMonth">
+            <summary>
+            考勤月份（用数字 1 - 12 表示）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.AttendanceDay">
+            <summary>
+            考勤日期
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity.LeaveDays">
+            <summary>
+            休假时长（串休以外的假期单位为天，表示为1或者0.5，0.5代表半天，其他数是串休）
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.FilePath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.ProcessMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.TaskUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.OrganizeID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.ReleaseMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.Priority">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.Priority2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.UpdateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_FilesManagementEntity.CreateDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_IndirectWorkEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_JapanHolidaysEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_JapanHolidaysEntity.Year">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_JapanHolidaysEntity.HolidayDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_JapanHolidaysEntity.HolidayName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.Id">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.LastUpdateUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.LastUpdateFlag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.CreateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.UpdateTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrderInfoEntity.FileContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Entities.System.T_OrganizationEntity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.OrganizationID">
+            <summary>
+            部门ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.OrganizationName">
+            <summary>
+            部门名称。最大长度为200个字符，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.MakerTaskCount">
+            <summary>
+            Maker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.CheckerTaskCount">
+            <summary>
+            Checker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.CreateTime">
+            <summary>
+            组织的创建时间。默认值为当前时间（GETDATE()）。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_OrganizationEntity.UpdateTime">
+            <summary>
+            组织的更新时间。此字段为可空类型。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.GUID">
+            <summary>
+            主键。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.EmployeeId">
+            <summary>
+            员工ID。最大长度为100个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.User_Name">
+            <summary>
+            用户名。此字段为必填项。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.OrganizationID">
+            <summary>
+            组织ID。此字段长度为2个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.Password">
+            <summary>
+            用户的密码。此字段为必填项，最大长度为255个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.User_Email">
+            <summary>
+            用户的电子邮件地址。最大长度为255个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.Web_Permission">
+            <summary>
+            用户的Web权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.Data_Permission">
+            <summary>
+            用户的数据权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.Import_Permission">
+            <summary>
+            用户的导入权限。默认值为0。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.BusinessType">
+            <summary>
+            业务类型编码表：
+            1 = Order processing（订单处理）
+            2 = Quotation Management（报价管理）
+            3 = Sales Support（销售支持）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.BusinessTypeText">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.CreateTime">
+            <summary>
+            用户记录的创建时间。
+            默认值为当前时间（GETDATE()）。该字段为可空类型。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.System.T_UserMasterEntity.UpdateTime">
+            <summary>
+            用户记录的最后更新时间。
+            该字段为可空类型。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.GUID">
+            <summary>
+            用户的全局唯一标识符，设置为主键
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.Team">
+            <summary>
+            团队
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.Group1">
+            <summary>
+            分组 1
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.Group2">
+            <summary>
+            分组 2
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.TokyoSkill">
+            <summary>
+            订单处理技能 - 东京
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.OsakaSkill">
+            <summary>
+            订单处理技能 - 大阪
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.Wave10Skill">
+            <summary>
+            订单处理技能 - Wave10
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.InputASkill">
+            <summary>
+            订单处理技能 - 入力 A
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.InputBSkill">
+            <summary>
+            订单处理技能 - 入力 B
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.NewSCSkill">
+            <summary>
+            订单处理技能 - 新 SC
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.EFAXSkill">
+            <summary>
+            订单处理技能 - E - FAX 送信
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.ProductQuoteSkill">
+            <summary>
+            报价管理技能 - 物販見積作成
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.GPOSecondQuoteSkill">
+            <summary>
+            报价管理技能 - GPO 二次見積
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.ContractQuoteSkill">
+            <summary>
+            报价管理技能 - 契約見積作成
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.MasterRegistrationSkill">
+            <summary>
+            报价管理技能 - マスター登録申請
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.CertificateSkill">
+            <summary>
+            报价管理技能 - 証明書 MSA 入金業務
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.MSAPaymentSkill">
+            <summary>
+            报价管理技能 - MSA 入金業務
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.PostDiscountSkill">
+            <summary>
+            报价管理技能 - 後値引き
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.SampleArrangementSkill">
+            <summary>
+            销售支持技能 - サンプル手配
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.ShortTermLoanSkill">
+            <summary>
+            销售支持技能 - 短期貸出（直販＆間販）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.InventoryPromotionSkill">
+            <summary>
+            销售支持技能 - 在庫関連＆販促品
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.LoanerEquipmentSkill">
+            <summary>
+            销售支持技能 - ローナー備品
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.EquipmentArrangementSkill">
+            <summary>
+            销售支持技能 - 備品手配関連(ローナー以外)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.IndirectSalesCaseSkill">
+            <summary>
+            销售支持技能 - 間販案件
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.NewSCCaseSkill">
+            <summary>
+            销售支持技能 - 新 SC 案件
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.DirectSalesCaseSkill">
+            <summary>
+            销售支持技能 - 直販案件
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.JapaneseCertificate">
+            <summary>
+            语言技能 - 日语证书
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.JapaneseAbility">
+            <summary>
+            语言技能 - 日语实际能力
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.StudyAbroadExperience">
+            <summary>
+            语言技能 - 留学经验
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.EnglishLevel">
+            <summary>
+            语言技能 - 英语等级
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.CallHandlingExperience">
+            <summary>
+            语言技能 - Call 对应经验
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.KTExperience">
+            <summary>
+            其他技能 - KT 经验
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.DomainExperience1">
+            <summary>
+            其他技能 - Domain 经验①(2 年以上)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.DomainExperience2">
+            <summary>
+            其他技能 - Domain 经验②(2 年以上)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.ExcelSkill">
+            <summary>
+            其他技能 - Excel 技能
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.OtherQualifications">
+            <summary>
+            其他技能 - その他資格
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Entities.T_SkillMatrixEntity.OtherSkills">
+            <summary>
+            其他技能 - その他スキル
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.AddScopedAssemblyServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Reflection.Assembly,System.String,System.String)">
+            <summary>
+            注入命名空间和类名后缀的实现类
+            </summary>
+            <param name="services"></param>
+            <param name="assembly"></param>
+            <param name="namespaceBase"></param>
+            <param name="classSuffix"></param>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.OrderByDynamic``1(System.Linq.IQueryable{``0},System.String,System.Boolean)">
+            <summary>
+            根据属性名字符串设置排序
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="propertyName"></param>
+            <param name="ascending"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.ApplyPageFilter``1(System.Linq.IQueryable{``0},MES_ReportForms.Core.PageFilter)">
+            <summary>
+            将PageFilter应用到Queryable，设置排序与分页
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="query"></param>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.PropertyBaseEntity(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder)">
+            <summary>
+            为BaseEntity设置公共字段声明
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.ToDescription``1(``0)">
+            <summary>
+            获取枚举值的描述
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Extensions.ToDescription``1(System.Nullable{``0})">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="enumValue"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.Core.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MES_ReportForms.Core.Migrations.Update">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Update.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Update.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MES_ReportForms.Core.Migrations.Update.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryFilter.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryFilter.FileName">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryFilter.ActionStartDate">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryFilter.ActionEndDate">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryFilter.TaskUser">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionGroupUserHistoryFilter.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionGroupUserHistoryFilter.ActionStartDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionGroupUserHistoryFilter.ActionEndDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryExport.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryExport.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryExport.ActionStartDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryExport.ActionEndDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ActionHistoryExport.TaskUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ExecuteFilter.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.ExecuteFilter.Sql">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.StartData">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.EndData">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.TaskUser">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.FileName">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementFilter.Status">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementExport.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementExport.StartData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementExport.EndData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementExport.TaskUser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.FilesManagementExport.Status">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.OrderInfoFilter.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.OrderInfoFilter.FileName">
+            <summary>
+            可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.OrderInfoExport.ConnectionName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.System.OrderInfoExport.FileName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Models.ApiResult">
+            <summary>
+            API响应体
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.CODE_SUCCESS">
+            <summary>
+            响应代码：成功
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.CODE_ERROR">
+            <summary>
+            响应代码：错误
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.CODE_NO_AUTH">
+            <summary>
+            响应代码：没有登录
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.CODE_NO_PERMISSION">
+            <summary>
+            响应代码：没有权限
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.MESSAGE_SUCCESS">
+            <summary>
+            响应消息：成功
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.Models.ApiResult.MESSAGE_ERROR">
+            <summary>
+            响应消息：错误
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ApiResult.Code">
+            <summary>
+            响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ApiResult.Message">
+            <summary>
+            响应消息
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ApiResult.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ApiResult.Total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult.ToError(System.String)">
+            <summary>
+            错误
+            </summary>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult.Ok(System.String)">
+            <summary>
+            成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.Core.Models.ApiResult`1">
+            <summary>
+            API响应体
+            </summary>
+            <typeparam name="T">返回值类型</typeparam>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ApiResult`1.Result">
+            <summary>
+            返回的数据
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult`1.op_Implicit(`0)~MES_ReportForms.Core.Models.ApiResult{`0}">
+            <summary>
+            响应：成功（隐式转换）
+            </summary>
+            <param name="result"></param>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult`1.Ok(`0)">
+            <summary>
+            成功
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult`1.OkCount(`0,System.Nullable{System.Int32})">
+            <summary>
+            成功
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Models.ApiResult`1.ToError(System.String)">
+            <summary>
+            错误
+            </summary>
+            <param name="errorMessage"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.OrganizationId">
+            <summary>
+            组织的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.OrganizationName">
+            <summary>
+            组织的名称。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.Start_Time">
+            <summary>
+            注意事项的开始时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.End_Time">
+            <summary>
+            注意事项的结束时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.User_Id">
+            <summary>
+            发布人（用户）的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.Subject">
+            <summary>
+            注意事项的简短标题或主题。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionAddDTO.Message">
+            <summary>
+            注意事项的详细内容。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.OrganizationId">
+            <summary>
+            组织的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.OrganizationName">
+            <summary>
+            组织的名称。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.Start_Time">
+            <summary>
+            注意事项的开始时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.End_Time">
+            <summary>
+            注意事项的结束时间。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.User_Id">
+            <summary>
+            发布人（用户）的唯一标识符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.Subject">
+            <summary>
+            注意事项的简短标题或主题。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionUpdateDTO.Message">
+            <summary>
+            注意事项的详细内容。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionQueryDTO.OrganizationName">
+            <summary>
+            组织的名称，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionQueryDTO.Start_Time">
+            <summary>
+            注意事项的开始时间，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionQueryDTO.End_Time">
+            <summary>
+            注意事项的结束时间，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttentionQueryDTO.User_Id">
+            <summary>
+            发布人（用户），可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttendanceRecordQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.AttendanceRecordQuery.OrganizationID">
+            <summary>
+            实际部门ID，必传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DashboardQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DashboardQuery.OrganizationID">
+            <summary>
+            实际部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.MissCountQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.MissCountQuery.OrganizationID">
+            <summary>
+            实际部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.MissCountQuery.Type">
+            <summary>
+            类型（Day:日[默认]；Week：周；Month：月）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DepartmentMonthCurrentYearQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationalFormQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationalFormQuery.OrganizationID">
+            <summary>
+            实际部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationalFormQuery.GUID">
+            <summary>
+            GUID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationalFormQuery.Type">
+            <summary>
+            类型（Day:日[默认]；Week：周；Month：月）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DailyPendingQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DailyPendingQuery.OrganizationID">
+            <summary>
+            实际部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DailyPendingQuery.CreateDate">
+            <summary>
+            可为空，不传则为全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DailyAttentionQuery.ConnectionName">
+            <summary>
+            可不传
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.DailyAttentionQuery.OrganizationID">
+            <summary>
+            实际部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.SkillMatrixQuery.ConnectionName">
+            <summary>
+            数据库连接名称
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.SkillMatrixQuery.TeamType">
+            <summary>
+            团队类型：Order Processing、Quotation Management、Sales Support
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Models.ExcelMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.ExcelMessage.MessageInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.GUID">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.User_Name">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.Description">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.Start_Time">
+            <summary>
+            开始时间，不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.End_Time">
+            <summary>
+            结束时间，不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.Non_OCR_Count">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.SPT">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.Non_OCR_JJCount">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.OCR_Count">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkAddDTO.OCR_JJCount">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.ID">
+            <summary>
+            修改数据的ID，不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.GUID">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.User_Name">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.Description">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.Start_Time">
+            <summary>
+            开始时间，不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.End_Time">
+            <summary>
+            结束时间，不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.Non_OCR_Count">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.SPT">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.Non_OCR_JJCount">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.OCRCount">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.IndirectWorkUpdateDTO.OCRJJCount">
+            <summary>
+            不可为空
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Models.Login">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationAddDTO.OrganizationID">
+            <summary>
+            部门ID。固定长度2个字符，为主键。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationAddDTO.OrganizationName">
+            <summary>
+            部门名称。最大长度为200个字符，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationAddDTO.MakerTaskCount">
+            <summary>
+            Maker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationAddDTO.CheckerTaskCount">
+            <summary>
+            Checker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationUpdateDTO.OrganizationID">
+            <summary>
+             部门ID。固定长度2个字符，为主键。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationUpdateDTO.OrganizationName">
+            <summary>
+            部门名称。最大长度为200个字符，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationUpdateDTO.MakerTaskCount">
+            <summary>
+            Maker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationUpdateDTO.CheckerTaskCount">
+            <summary>
+            Checker每次获取任务的件数，不能为空。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationQueryDTO.OrganizationID">
+            <summary>
+             部门ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationQueryDTO.OrganizationName">
+            <summary>
+            部门名称，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationQueryDTO.MakerTaskCount">
+            <summary>
+            Maker每次获取任务的件数，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.OrganizationQueryDTO.CheckerTaskCount">
+            <summary>
+            Checker每次获取任务的件数，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.GUID">
+            <summary>
+            主键。
+            </summary> 
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.EmployeeId">
+            <summary>
+            获取或设置员工ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.User_Name">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.OrganizationID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.Password">
+            <summary>
+            用户的密码
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.User_Email">
+            <summary>
+            用户的电子邮件地址
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.Web_Permission">
+            <summary>
+            用户的Web权限，必填
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.Data_Permission">
+            <summary>
+            用户的数据权限，必填
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.Import_Permission">
+            <summary>
+            用户的导入权限。默认值为0。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterAddDTO.BusinessType">
+            <summary>
+            业务类型编码表：
+            1 = Order processing（订单处理）
+            2 = Quotation Management（报价管理）
+            3 = Sales Support（销售支持）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.GUID">
+            <summary>
+            主键。
+            </summary> 
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.EmployeeId">
+            <summary>
+            获取或设置员工ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.User_Name">
+            <summary>
+            用户名。此字段为必填项。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.OrganizationID">
+            <summary>
+            组织ID
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.User_Email">
+            <summary>
+            用户的电子邮件地址
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.Web_Permission">
+            <summary>
+            用户的Web权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.Data_Permission">
+            <summary>
+            用户的数据权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.Import_Permission">
+            <summary>
+            用户的导入权限。默认值为0。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterUpdateDTO.BusinessType">
+            <summary>
+            业务类型编码表：
+            1 = Order processing（订单处理）
+            2 = Quotation Management（报价管理）
+            3 = Sales Support（销售支持）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterQueryDTO.GUID">
+            <summary>
+            主键，可为空，不传则全部
+            </summary> 
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterQueryDTO.EmployeeId">
+            <summary>
+             员工ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterQueryDTO.User_Name">
+            <summary>
+             用户名，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterQueryDTO.OrganizationID">
+            <summary>
+            组织ID，可为空，不传则全部
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserMasterQueryDTO.BusinessType">
+            <summary>
+            业务类型编码表：
+            1 = Order processing（订单处理）
+            2 = Quotation Management（报价管理）
+            3 = Sales Support（销售支持）
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.EmployeeId">
+            <summary>
+            获取或设置员工ID。最大长度为100个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.UserName">
+            <summary>
+            获取或设置用户名。此字段为必填项。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.OrganizationID">
+            <summary>
+            获取或设置组织ID。此字段长度为2个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.UserEmail">
+            <summary>
+            获取或设置用户的电子邮件地址。最大长度为255个字符。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.WebPermission">
+            <summary>
+            获取或设置用户的Web权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.DataPermission">
+            <summary>
+            获取或设置用户的数据权限。
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Models.UserSession.ImportPermission">
+            <summary>
+            获取或设置用户的导入权限。默认值为0。
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.PageData`1">
+            <summary>
+            分页查询响应
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.CODE_SUCCESS">
+            <summary>
+            响应代码：成功
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.CODE_ERROR">
+            <summary>
+            响应代码：错误
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.CODE_NO_AUTH">
+            <summary>
+            响应代码：没有登录
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.CODE_NO_PERMISSION">
+            <summary>
+            响应代码：没有权限
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.MESSAGE_SUCCESS">
+            <summary>
+            响应消息：成功
+            </summary>
+        </member>
+        <member name="F:MES_ReportForms.Core.PageData`1.MESSAGE_ERROR">
+            <summary>
+            响应消息：错误
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageData`1.Code">
+            <summary>
+            响应代码（0:成功; -1:失败; -100:没有登录; -101;没有权限)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageData`1.Message">
+            <summary>
+            响应消息
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageData`1.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageData`1.Result">
+            <summary>
+            数据列表
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageData`1.Total">
+            <summary>
+            总记录数
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.PageData`1.Build``1(MES_ReportForms.Core.PageFilter,System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            构建一个对象
+            </summary>
+            <param name="filter"></param>
+            <param name="items"></param>
+            <param name="totalCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.Core.PageFilter">
+            <summary>
+            按页查询
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageFilter.PageSize">
+            <summary>
+            每页记录数(默认20)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageFilter.PageNumber">
+            <summary>
+            当前页码(默认1)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageFilter.OrderBy">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.PageFilter.Order">
+            <summary>
+            排序方式，选项为：ASC、DESC，分别为升序、降序
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.PageFilter.IsASC">
+            <summary>
+            排序方式是否为升序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.ImportFileRepository.ImportEmployeeAttendanceDataToDb(System.Collections.Generic.List{MES_ReportForms.Core.Entities.System.T_EmployeeAttendanceEntity},System.Int32)">
+            <summary>
+            批量新增
+            </summary>
+            <param name="insertEntity"></param>
+            <param name="currentMonth"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.ImportFileRepository.GetLeaveType(System.String,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="attendanceData"></param>
+            <param name="leaveDays"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.ImportFileRepository.ImportSkillMatrixDataToDb(System.Collections.Generic.List{MES_ReportForms.Core.Entities.T_SkillMatrixEntity})">
+            <summary>
+            批量新增
+            </summary>
+            <param name="insertEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.ImportFileRepository.GetCellValue(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.ImportFileRepository.ImportJapanHolidaysDataToDb(System.Collections.Generic.List{MES_ReportForms.Core.Entities.System.T_JapanHolidaysEntity})">
+            <summary>
+            批量新增
+            </summary>
+            <param name="insertEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MES_ReportForms.Core.Repositories.EF.RepositoryBase`1">
+            <summary>
+            数据存储库基类
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="F:MES_ReportForms.Core.Repositories.EF.RepositoryBase`1._dbSet">
+            <summary>
+            当前数据表实体的数据集
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Repositories.EF.RepositoryBase`1.DbContext">
+            <summary>
+            当前数据库EF上下文
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.EF.RepositoryBase`1.#ctor(MES_ReportForms.Core.ApplicationDbContext)">
+            <summary>
+            数据存储库基类
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:MES_ReportForms.Core.Repositories.EF.UserMasterRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.ActionHistoryRepository.GetActionGroupUserHistory(MES_ReportForms.Core.Models.System.ActionGroupUserHistoryFilter)">
+            <summary>
+            返回件管理-分页查询
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.ActionHistoryRepository.GetActionHistoryList(MES_ReportForms.Core.Models.System.ActionHistoryFilter)">
+            <summary>
+            GetActionHistoryList
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetSkillMatrixListByTeam(MES_ReportForms.Core.Models.SkillMatrixQuery)">
+            <summary>
+            根据团队类型获取技能矩阵数据列表
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetSkillFieldsByTeamType(System.String)">
+            <summary>
+            根据团队类型获取对应的技能字段
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.ConvertSkillValues(System.Collections.Generic.IEnumerable{System.Object},System.String)">
+            <summary>
+            转换查询结果中的技能值（数字转形状）
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.ConvertTeamSpecificSkills(System.Collections.Generic.IDictionary{System.String,System.Object},System.String)">
+            <summary>
+            根据团队类型转换特定的技能字段
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.ConvertSkillField(System.Collections.Generic.IDictionary{System.String,System.Object},System.String)">
+            <summary>
+            转换单个技能字段值（数字转形状）
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.DashboardRepository.GetCellValue(System.String)">
+            <summary>
+            转换技能值（1→◎，2→〇，3→△，0或其他→空）
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.ExecuteRepository.QueryTable(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.ExecuteRepository.ExecuteSql(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="conn"></param>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Repositories.Sql.FilesManagementRepository.ExportFilesManagement(MES_ReportForms.Core.Models.System.FilesManagementFilter)">
+            <summary>
+            
+            </summary>
+            <param name="taskQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="P:MES_ReportForms.Core.Repositories.Sql.ProcessRepositoryBase.DBCon">
+            <summary>
+            Process 数据库（配置在主数据库 Process 表中的 ConnectionString 列）
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Utils.BizException">
+            <summary>
+            业务异常
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Utils.BizException.#ctor">
+            <summary>
+            BizException
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Utils.BizException.#ctor(System.String)">
+            <summary>
+            BizException
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="P:MES_ReportForms.Core.Utils.BizException.IsThrowToFrontend">
+            <summary>
+            是否抛给前端(应用程序)界面端显示
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Core.Utils.BizException.Code">
+            <summary>
+            业务异常码
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Core.Utils.CacheHelper">
+            <summary>
+            CacheHelper class
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Core.Utils.CacheHelper.CacheFunc``1(System.Func{System.Threading.Tasks.Task{``0}},System.String,System.Int32)">
+            <summary>
+            调用函数并缓存结果，下次从缓存中获取
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="func">被调用的函数</param>
+            <param name="cacheKey">缓存key</param>
+            <param name="minutes">缓存时长分钟数</param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.Utils.CacheHelper.RemoveCache(System.String)">
+            <summary>
+            移除缓存
+            </summary>
+            <param name="cacheKey"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:MES_ReportForms.Core.CommonUtils.GenerateRandomString" -->
+        <member name="M:MES_ReportForms.Core.CommonUtils.GenerateSaltedHash(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="password"></param>
+            <param name="salt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.CommonUtils.GetColumnNames(System.Type)">
+            <summary>
+            动态获取列的名称集合
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MES_ReportForms.Core.CommonUtils.GetDateRange(System.String)">
+            <summary>
+            获取对应条件的日期
+            </summary>
+            <param name="timeRange"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="F:MES_ReportForms.Core.Constants.Default_CanNonInventory">
+            <summary>
+            是否允许无库存下单 (默认true)
+            </summary>
+        </member>
+        <member name="P:MES_ReportForms.Domain.Services.ProcessServiceBase.DBCon">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:MES_ReportForms.Domain.Services.ServiceBase.MDB">
+            <summary>
+            Main 主数据库
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Utilities.DapperExtensions">
+            <summary>
+            补充 Dapper 扩展方法
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Utilities.DbConnectionFactory">
+            <summary>
+            创建数据库连接的工厂
+            </summary>
+        </member>
+        <member name="T:MES_ReportForms.Utilities.SqlHelper">
+            <summary>
+            SQL语句辅助类
+            </summary>
+        </member>
+        <member name="M:MES_ReportForms.Utilities.SqlHelper.SqlSplitPage(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            SQL分页语句
+            </summary>
+            <param name="sqlClause"></param>
+            <param name="pageNumber"></param>
+            <param name="pageSize"></param>
+            <param name="orderColumn"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

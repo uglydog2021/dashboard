@@ -85,6 +85,10 @@ namespace MES_ReportForms.Core.Models
             };
         }
 
+        internal static ApiResult Failed(string v)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     /// <summary>

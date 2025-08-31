@@ -85,11 +85,11 @@ namespace MES_ReportForms.WebAPI.Controllers
         /// <param name="connectionName">可不传</param>
         /// <returns></returns>
         [HttpGet("getDailyTotalFileCount")]
-        public async Task<ApiResult> GetDailyTotalFileCount(string connectionName)
+        public async Task<ApiResult> GetDailyTotalFileCount([FromQuery] DashboardQuery query)
         {
-            var dashboardRepository = new DashboardRepository(connectionName);
+            var dashboardRepository = new DashboardRepository(query.ConnectionName);
 
-            return await dashboardRepository.GetDailyTotalFileCount();
+            return await dashboardRepository.GetDailyTotalFileCount(query);
         }
 
 
@@ -99,7 +99,7 @@ namespace MES_ReportForms.WebAPI.Controllers
         /// <param name="connectionName">可不传</param>
         /// <returns></returns>
         [HttpGet("getDailyCountByStatus")]
-        public async Task<ApiResult> GetDailyCountByStatus([FromQuery] Dashboard6Query query)
+        public async Task<ApiResult> GetDailyCountByStatus([FromQuery] DashboardQuery query)
         {
             var dashboardRepository = new DashboardRepository(query.ConnectionName);
 
@@ -164,7 +164,7 @@ namespace MES_ReportForms.WebAPI.Controllers
              
             return ApiResult<dynamic>.Ok(new { SamePeriod = numberItemsSamePeriodLastYear.Result, AttendanceRate = attendanceRateDepartmentCurrentMonth.Result });
         }
-
+        
         /// <summary>
         /// 10
         /// </summary>
@@ -176,6 +176,19 @@ namespace MES_ReportForms.WebAPI.Controllers
             var dashboardRepository = new DashboardRepository(query.ConnectionName);
 
             return await dashboardRepository.GetDailyAttentionList(query);
+        }
+
+        /// <summary>
+        /// 11-根据团队类型获取技能矩阵数据
+        /// </summary>
+        /// <param name="query">技能矩阵查询参数</param>
+        /// <returns>技能矩阵数据列表，包含转换后的技能符号</returns>
+        [HttpGet("getSkillMatrixByTeam")]
+        public async Task<ApiResult> GetSkillMatrixByTeam([FromQuery] SkillMatrixQuery query)
+        {
+            var dashboardRepository = new DashboardRepository(query.ConnectionName);
+
+            return await dashboardRepository.GetSkillMatrixListByTeam(query);
         }
     }
 }

@@ -192,6 +192,7 @@ namespace MES_ReportForms.Core.Entities
         /// 其他技能 - その他スキル
         /// </summary>
         public string OtherSkills { get; set; }
+        //public string Name { get; internal set; }
     }
 
 }

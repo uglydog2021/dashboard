@@ -59,7 +59,7 @@ namespace MES_ReportForms.Core.Repositories.Sql
                                 left JOIN 
                                     [dbo].[T_UserMaster] U WITH (NOLOCK)
                                 ON 
-                                    AH.taskUser = U.User_Name
+                                    AH.taskUser = U.GUID
                                 WHERE 
                                     status = 49 
                                 ");

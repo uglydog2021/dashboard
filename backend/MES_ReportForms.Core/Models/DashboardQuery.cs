@@ -35,7 +35,7 @@ namespace MES_ReportForms.Core.Models
         //public int? AttendanceDay { get; set; }
     }
 
-    public class Dashboard6Query
+    public class DashboardQuery
     {
         /// <summary>
         /// 可不传
@@ -102,6 +102,11 @@ namespace MES_ReportForms.Core.Models
         /// 实际部门ID，可为空，不传则全部
         /// </summary>
         public int? OrganizationID { get; set; }
+
+        /// <summary>
+        /// GUID
+        /// </summary>
+        public string GUID { get; set; }
          
         /// <summary>
         /// 类型（Day:日[默认]；Week：周；Month：月）
@@ -116,6 +121,11 @@ namespace MES_ReportForms.Core.Models
         /// 可不传
         /// </summary>
         public string ConnectionName { get; set; }
+
+        /// <summary>
+        /// 实际部门ID，可为空，不传则全部
+        /// </summary>
+        public int? OrganizationID { get; set; }
 
         /// <summary>
         /// 可为空，不传则为全部
@@ -133,6 +143,19 @@ namespace MES_ReportForms.Core.Models
         /// 实际部门ID，可为空，不传则全部
         /// </summary>
         public int? OrganizationID { get; set; }
+    }
+
+    public class SkillMatrixQuery
+    {
+        /// <summary>
+        /// 数据库连接名称
+        /// </summary>
+        public string ConnectionName { get; set; }
+
+        /// <summary>
+        /// 团队类型：Order Processing、Quotation Management、Sales Support
+        /// </summary>
+        public string TeamType { get; set; }
     }
 
 }
